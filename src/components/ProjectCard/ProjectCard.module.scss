@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+.card {
+    font-family: 'Merriweather';
+    width: 370px;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border-color: #2e2e2e;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    // box-shadow:rgba(0, 0, 0, 0.2) 0 10px 30px    
+}
+
+.card:hover {
+    // box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card_title {
+    background-color: aqua;
+    padding: 0.25rem;
+}
+
+.card_body {
+    background-color: red;
+    padding: 0.25rem;
+}
+
+.card_footer {
+    background-color: purple;
+    padding: 0.25rem;
+}
