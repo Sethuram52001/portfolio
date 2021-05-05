@@ -1,17 +1,21 @@
 import React from 'react';
 import * as styles from "./BlogCard.module.scss";
 
-const BlogCard = () => {
+const BlogCard = ({title, intro, published, read, link}) => {
     return ( 
         <>
-        <a className={styles.blogCard} href="https://sethuram52001.medium.com/data-structures-graph-d71f8530d38">
+        <a className={styles.blogCard} href={link}>
             <h3 className={styles.blogTitle}>
-                Hi there blog
+                {title}
             </h3>
             <p className={styles.blogSummary}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                {intro} 
+            </p>
+            <p>
+                {published}
+            </p>
+            <p>
+                {read}
             </p>
             <div className={styles.linkToBlog}>
                 <div className="goArrow">
