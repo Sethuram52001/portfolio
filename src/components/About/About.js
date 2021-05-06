@@ -1,6 +1,6 @@
 import React from 'react';
 import * as styles from "./About.module.scss";
-import MyImage from "../../images/MyImage.jpeg";
+import {StaticImage} from "gatsby-plugin-image";
 
 const About = () => {
     return ( 
@@ -15,7 +15,11 @@ const About = () => {
                 I'm a passionate learner in the field of web-development, currently having fun building web-apps with ReactJS / Javascript and some othe cool libraries and frameworks.
                 I'm also intrigued by data structures and algorithms and occassionaly write blogs on them.
             </p>
-            <img src={MyImage} alt="profile picture" />
+            <StaticImage 
+                src="../../images/MyImage.jpeg"
+                alt="my profile"
+                quality="100"
+            />
         </div>
      );
 }

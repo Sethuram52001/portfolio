@@ -15,13 +15,45 @@ import GitIcon from "../../images/git.svg";
 import NPMIcon from "../../images/npm.svg";
 import GatsbyIcon from "../../images/gatsby.svg";
 import NextIcon from "../../images/next-js.svg";
+import ExpressIcon from "../../images/expressjs.svg";
+import SkillComponent from '../SkillComponent/SkillComponent';
 
 const Skills = () => {
+
+    const skill_icons = [
+        {src: HTMLIcon, name: "HTML"},
+        {src: CSSIcon, name: "CSS"},
+        {src: JSIcon, name: "JavaScript"},
+        {src: TSIcon, name: "Typescript"},
+        {src: JavaIcon, name: "Java"},
+        {src: ReactIcon, name: "React"},
+        {src: GraphQLIcon, name: "GraphQL"},
+        {src: NodeJSIcon, name: "NodeJS"},
+        {src: ExpressIcon, name: "ExpressJS"},
+        {src: SassIcon, name: "Sass"},
+        {src: MaterialIcon, name: "Material UI"},
+        {src: MongoIcon, name: "MongoDB"},
+        {src: FirebaseIcon, name: "Firebase"},
+        {src: GitIcon, name: "Git"},
+        {src: NPMIcon, name: "NPM"}
+    ]
+    console.log(skill_icons)
+
     return ( 
         <div id="skills">
             <h1>Skills</h1>
             <p>I love learning new tech stacks in the field of web-dev. And aspire to explore all the tech stack which intrigue me</p>
-            <img src={HTMLIcon} width="100px" alt="html5" />
+            {skill_icons.map((skill, index) => (
+                <SkillComponent skill={skill} />
+            ))}
+        </div>
+     );
+}
+ 
+export default Skills;
+
+/*
+           <img src={HTMLIcon} width="100px" alt="html5" />
             <img src={CSSIcon} width="100px" alt="css3" />
             <img src={JSIcon} width="100px" alt="js" />
             <img src={TSIcon} width="100px" alt="ts" />
@@ -37,8 +69,4 @@ const Skills = () => {
             <img src={NPMIcon} width="100px" alt="npm" />
             <img src={GatsbyIcon} width="100px" alt="gatsby" />
             <img src={NextIcon} width="100px" alt="next" />
-        </div>
-     );
-}
- 
-export default Skills;
+*/
