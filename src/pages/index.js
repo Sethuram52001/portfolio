@@ -5,6 +5,9 @@ import About from "../components/About/About";
 import Skills from "../components/Skills/Skills";
 import Projects from "../components/Projects/Projects";
 import Blogs from "../components/Blogs/Blogs";
+import Certifications from "../components/Certifications/Certfications";
+import Education from "../components/Education/Education";
+import Experience from "../components/Experience/Experience";
 
 const IndexPage = () => (
   <Layout>
@@ -12,6 +15,9 @@ const IndexPage = () => (
     <Skills />
     <Projects />
     <Blogs />
+    <Certifications />
+    <Education />
+    <Experience />
   </Layout>
 )
 
