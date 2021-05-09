@@ -12,7 +12,7 @@ const Experience = () => {
     ]
 
     return ( 
-        <div>
+        <div id="experience">
             <h1>Experience</h1>
             <div>
                 <h3>{experiences[0].company_name}</h3>

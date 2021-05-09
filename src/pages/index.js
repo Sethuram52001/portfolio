@@ -9,9 +9,11 @@ import Certifications from "../components/Certifications/Certfications";
 import Education from "../components/Education/Education";
 import Experience from "../components/Experience/Experience";
 import Footer from "../components/Footer/Footer";
+import Navbar from "../components/Navbar/Navbar";
 
 const IndexPage = () => (
   <Layout>
+    <Navbar />
     <About />
     <Skills />
     <Projects />

@@ -11,7 +11,7 @@ const Education = () => {
     ]
 
     return ( 
-        <div>
+        <div id="education">
             <h1>Education</h1>
             <div>
                 <h3>{education[0].name}</h3>
