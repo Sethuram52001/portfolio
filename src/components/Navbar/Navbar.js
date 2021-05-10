@@ -1,28 +1,32 @@
 import React from 'react';
+import {Link} from "gatsby";
 
 const Navbar = () => {
     return ( 
         <ul>
             <li>
-                <a href="#education">Education</a>
+                <Link href="#education">Education</Link>
             </li>
             <li>
-                <a href="#skills">Skills</a>
+                <Link to="/#education">edu</Link>
             </li>
             <li>
-                <a href="#blogs">Blogs</a>
+                <Link href="#skills">Skills</Link>
             </li>
             <li>
-                <a href="#certifcations">Certifications</a>
+                <Link href="#blogs">Blogs</Link>
             </li>
             <li>
-                <a href="#projects">Projects</a>
+                <Link href="#certifcations">Certifications</Link>
             </li>
             <li>
-                <a href="#about">About Me</a>
+                <Link href="#projects">Projects</Link>
             </li>
             <li>
-                <a href="#experience">Experience</a>
+                <Link href="#about">About Me</Link>
+            </li>
+            <li>
+                <Link href="#experience">Experience</Link>
             </li>
         </ul>
      );

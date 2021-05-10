@@ -1,26 +1,12 @@
-.certificateCard {
-    width: 1000px;
-    height: 200px;
-    background-color: black;
-    color: white;
+.certificateContainer {
+    border: solid coral;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 }
 
-.certificateLogo {
-    display: inline-block;
+.organizationLogo {
+    margin-top: auto;
+    margin-bottom: auto;
 }
-
-.infocontainer{
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 0 0 5px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    background-color: black;
-    color: white;
- }
- 
- .infocontainer p{
-     padding: 0;
-     margin: 0 0 10px;
- }

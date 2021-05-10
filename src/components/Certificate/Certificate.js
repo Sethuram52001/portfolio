@@ -8,9 +8,9 @@ const Certificate = ({name, organization, verification}) => {
     let logo = (organization === "Coursera") ? CourseraLogo : HCLogo; 
 
     return ( 
-        <div class="flex-item">
-            <img src={logo} width="100px" height="100px" />
-            <div class={styles.infocontainer}>
+        <div className={styles.certificateContainer}>
+            <img className={styles.organizationLogo} src={logo} width="100px" height="100px" />
+            <div>
                 <h4>{name}</h4>
                 <p>{organization}</p>
                 <a href={verification} target="_blank">See credentials</a>
