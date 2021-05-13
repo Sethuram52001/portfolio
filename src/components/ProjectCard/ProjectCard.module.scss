@@ -19,16 +19,36 @@
 }
 
 .card_title {
-    background-color: aqua;
     padding: 0.25rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
 }
 
 .card_body {
-    background-color: red;
     padding: 0.25rem;
 }
 
 .card_footer {
-    background-color: purple;
     padding: 0.25rem;
+}
+
+.language_color {
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    margin-right: 0.25rem;
+    border-radius: 100%;
+    display: inline-block;
+  }
+
+.lang {
+    margin: 0.5rem;
+}
+
+.stars {
+    margin: 0.5rem;
+}
+
+.forks {
+    margin: 0.5rem;
 }

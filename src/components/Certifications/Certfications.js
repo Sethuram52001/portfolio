@@ -52,6 +52,7 @@ const Certifications = () => {
 
     return ( 
         <div id="certifcations">
+            <h1>Certifications</h1>
             {certificates.map((certificate, index) => (
                 <Certificate name={certificate.name} organization={certificate.organization} verification={certificate.verification} />
             ))}
