@@ -1,4 +1,5 @@
 import React from 'react';
+import * as styles from "./Education.module.scss";
 
 const Education = () => {
 
@@ -13,7 +14,7 @@ const Education = () => {
     return ( 
         <div id="education">
             <h1>Education</h1>
-            <div>
+            <div className={styles.education_card}>
                 <h3>{education[0].name}</h3>
                 <p>{education[0].degree}</p>
                 <p>{education[0].time}</p>

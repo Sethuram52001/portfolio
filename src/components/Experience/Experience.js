@@ -1,4 +1,6 @@
 import React from 'react';
+import * as styles from "./Experience.module.scss";
+
 
 const Experience = () => {
 
@@ -14,7 +16,7 @@ const Experience = () => {
     return ( 
         <div id="experience">
             <h1>Experience</h1>
-            <div>
+            <div className={styles.experience_card}>
                 <h3>{experiences[0].company_name}</h3>
                 <p>{experiences[0].role}</p>
                 <p>{experiences[0].period}</p>
