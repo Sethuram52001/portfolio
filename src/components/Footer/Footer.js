@@ -3,7 +3,7 @@ import * as styles from "./Footer.module.scss";
 
 const Footbar = () => {
     return ( 
-        <footer>
+        <footer className={styles.footer}>
             Copyright (c) 2021 Sethuram.S.V
         </footer>
      );

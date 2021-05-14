@@ -11,12 +11,12 @@ const BlogCard = ({title, intro, published, read, link}) => {
             <p className={styles.blogSummary}>
                 {intro} 
             </p>
-            <p>
+            <p className={styles.blogFooter}>
                 {published} {read}
             </p>
             <div className={styles.linkToBlog}>
                 <div className={styles.goArrow}>
-                    {`->`}
+                    {`→`}
                 </div>
             </div>
         </a>
