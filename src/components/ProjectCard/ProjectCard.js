@@ -1,12 +1,13 @@
 import React from 'react';
 import * as styles from "./ProjectCard.module.scss";
 import {colors} from "./github_official_colors_lang";
+import { StaticImage } from "gatsby-plugin-image";
 
 const ProjectCard = ({title, intro, lang, stars, forks}) => {
     return ( 
         <div data-sal="slide-up" data-sal-delay="300" data-sal-easing="easy" className={styles.card}>
             <div>
-                <img src="https://picsum.photos/350/300" />
+                <StaticImage src="../../images/project-images/pathfinding.png" alt="project_image" />
             </div>
             <div className={styles.card_title}>{title}</div>
             <div className={styles.card_body}>
