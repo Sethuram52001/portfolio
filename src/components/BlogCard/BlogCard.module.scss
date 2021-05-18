@@ -32,6 +32,12 @@
     color: white;
 }
 
+.blogCard:hover {
+    color: white;
+    background-color: #55198b;
+    transition: all 0.5s ease-out;
+}
+
 .blogTitle {}
 
 .blogSummary{}

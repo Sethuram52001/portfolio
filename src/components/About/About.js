@@ -1,8 +1,17 @@
 import React from 'react';
 import * as styles from "./About.module.scss";
 import {StaticImage} from "gatsby-plugin-image";
+import Lottie from "react-lottie";
+import animationData from "../../animations/student.json";
 
 const About = () => {
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData
+    }
+
     return ( 
         <div id="about">
             <h1 className={styles.title}>
@@ -20,6 +29,7 @@ const About = () => {
                 alt="my profile"
                 quality="100"
             />
+            <Lottie options={defaultOptions} />
         </div>
      );
 }

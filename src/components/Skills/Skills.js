@@ -17,6 +17,8 @@ import GatsbyIcon from "../../images/gatsby.svg";
 import NextIcon from "../../images/next-js.svg";
 import ExpressIcon from "../../images/expressjs.svg";
 import SkillComponent from '../SkillComponent/SkillComponent';
+import animationData from "../../animations/web-development.json";
+import Lottie from "react-lottie";
 
 const Skills = () => {
 
@@ -37,11 +39,17 @@ const Skills = () => {
         {src: GitIcon, name: "Git"},
         {src: NPMIcon, name: "NPM"}
     ]
-    console.log(skill_icons)
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData
+    }
 
     return ( 
         <div id="skills">
             <h1>Skills</h1>
+            <Lottie options={defaultOptions} />
             <p>I love learning new tech stacks in the field of web-dev. And aspire to explore all the tech stack which intrigue me</p>
             {skill_icons.map((skill, index) => (
                 <SkillComponent skill={skill} />
@@ -51,22 +59,3 @@ const Skills = () => {
 }
  
 export default Skills;
-
-/*
-           <img src={HTMLIcon} width="100px" alt="html5" />
-            <img src={CSSIcon} width="100px" alt="css3" />
-            <img src={JSIcon} width="100px" alt="js" />
-            <img src={TSIcon} width="100px" alt="ts" />
-            <img src={JavaIcon} width="100px" alt="java" />
-            <img src={ReactIcon} width="100px" alt="react" />
-            <img src={GraphQLIcon} width="100px" alt="graphql" />
-            <img src={NodeJSIcon} width="100px" alt="node" />
-            <img src={SassIcon} width="100px" alt="sass" />
-            <img src={MaterialIcon} width="100px" alt="material" />
-            <img src={MongoIcon} width="100px" alt="mongo" />
-            <img src={FirebaseIcon} width="100px" alt="firebase" />
-            <img src={GitIcon} width="100px" alt="git" />
-            <img src={NPMIcon} width="100px" alt="npm" />
-            <img src={GatsbyIcon} width="100px" alt="gatsby" />
-            <img src={NextIcon} width="100px" alt="next" />
-*/
