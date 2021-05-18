@@ -29,7 +29,9 @@ const About = () => {
                 alt="my profile"
                 quality="100"
             />
-            <Lottie options={defaultOptions} />
+            <div className={styles.lottieConatiner}>
+                <Lottie options={defaultOptions} />
+            </div>
         </div>
      );
 }

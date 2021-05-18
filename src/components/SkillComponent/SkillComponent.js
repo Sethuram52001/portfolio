@@ -13,7 +13,7 @@ const SkillComponent = ({skill}) => {
                 </Tooltip>
             }
         >
-            <img src={skill.src} name={skill.name} width="100px" alt={skill.name} />
+            <img src={skill.src} name={skill.name} width="80px" alt={skill.name} />
         </OverlayTrigger>
      );
 }
