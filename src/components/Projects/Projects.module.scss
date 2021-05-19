@@ -4,3 +4,9 @@
     //justify-content: space-around;
     justify-content: flex-start;
 }
+
+@media (max-width: 768px) {
+    .projectContainer {
+        justify-content: space-around;
+    }
+}

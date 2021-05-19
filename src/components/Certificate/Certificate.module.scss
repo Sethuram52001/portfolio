@@ -5,10 +5,23 @@
     display: flex;
     border-radius: 1rem;
     margin-bottom: 2rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    //box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .organizationLogo {
     margin-top: auto;
     margin-bottom: auto;
+}
+
+@media (max-width: 768px) {
+    .certificateContainer {
+        width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .certificateContainer {
+        width: 300px;
+    }
 }
