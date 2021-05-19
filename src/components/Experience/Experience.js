@@ -1,18 +1,9 @@
 import React from 'react';
 import * as styles from "./Experience.module.scss";
 import { StaticImage } from "gatsby-plugin-image";
-
+import {experiences} from "./Experience.data"; 
 
 const Experience = () => {
-
-    const experiences = [
-        {
-            company_name: "The Sparks Foundation",
-            role: "Intern",
-            period: "Apr 2021",
-            verification: "#"
-        }
-    ]
 
     return ( 
         <div id="experience">
