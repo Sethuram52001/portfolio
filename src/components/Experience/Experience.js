@@ -19,7 +19,7 @@ const Experience = () => {
             <h1>Experience</h1>
             <div className={styles.experience_card}>
                 <div>
-                    <StaticImage src="../../images/experience-logos/TSF.png" alt="TSF" />
+                    <StaticImage src="../../assets/images/experience-logos/TSF.png" alt="TSF" />
                 </div>
                 <div>
                     <h3>{experiences[0].company_name}</h3>

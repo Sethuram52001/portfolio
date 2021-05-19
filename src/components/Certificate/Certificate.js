@@ -1,6 +1,6 @@
 import React from 'react';
-import CourseraLogo from "../../images/certificate-logos/coursera.svg";
-import HCLogo from "../../images/certificate-logos/hackerrank.svg";
+import CourseraLogo from "../../assets/images/certificate-logos/coursera.svg";
+import HCLogo from "../../assets/images/certificate-logos/hackerrank.svg";
 import * as styles from "./Certificate.module.scss";
 
 const Certificate = ({name, organization, verification}) => {

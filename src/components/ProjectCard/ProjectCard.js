@@ -7,7 +7,7 @@ const ProjectCard = ({title, intro, lang, stars, forks}) => {
     return ( 
         <div data-sal="slide-up" data-sal-delay="300" data-sal-easing="easy" className={styles.card}>
             <div>
-                <StaticImage src="../../images/project-images/pathfinding.png" alt="project_image" />
+                <StaticImage src="../../assets/images/project-images/pathfinding.png" alt="project_image" />
             </div>
             <div className={styles.card_title}>{title}</div>
             <div className={styles.card_body}>

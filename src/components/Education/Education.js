@@ -17,7 +17,7 @@ const Education = () => {
             <h1>Education</h1>
             <div className={styles.education_card}>
                 <div>
-                    <StaticImage src="../../images/education-logos/TCE.png" alt="TCE" />
+                    <StaticImage src="../../assets/images/education-logos/TCE.png" alt="TCE" />
                 </div>
                 <div>
                     <h3>{education[0].name}</h3>

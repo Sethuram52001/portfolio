@@ -10,6 +10,7 @@
     margin: 2rem;
     text-decoration: none;
     color: black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .blogCard::before {
@@ -18,8 +19,8 @@
     z-index: -1;
     top: -16px;
     right: -16px;
-    //background: #55198b;
-    background:rgb(136, 247, 255);;
+    background: #55198b;
+    //background:rgb(136, 247, 255);;
     height: 32px;
     width: 32px;
     border-radius: 32px;
@@ -37,6 +38,8 @@
     color: white;
     background-color: #55198b;
     transition: all 0.5s ease-out;
+    //box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    //box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .blogTitle {}

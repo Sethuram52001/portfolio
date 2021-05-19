@@ -2,7 +2,7 @@ import React from 'react';
 import * as styles from "./About.module.scss";
 import {StaticImage} from "gatsby-plugin-image";
 import Lottie from "react-lottie";
-import animationData from "../../animations/student.json";
+import animationData from "../../assets/animations/student.json";
 
 const About = () => {
 
@@ -25,7 +25,7 @@ const About = () => {
                 I'm also intrigued by data structures and algorithms and occassionaly write blogs on them.
             </p>
             <StaticImage 
-                src="../../images/MyImage.jpeg"
+                src="../../assets/images/MyImg/MyImage.jpeg"
                 alt="my profile"
                 quality="100"
             />
