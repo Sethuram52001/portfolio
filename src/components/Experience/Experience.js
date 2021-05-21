@@ -9,7 +9,7 @@ const Experience = () => {
     return ( 
         <div id="experience">
             <h1>Experience</h1>
-            <div className={styles.experience_card}>
+            <div className={styles.experience_container}>
                 {experiences.map((experience, index) => (
                     <ExperienceCard company_name={experience.company_name} role={experience.role} period={experience.period} verification={experience.verification} />
                 ))}

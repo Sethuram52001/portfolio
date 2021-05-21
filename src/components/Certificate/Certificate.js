@@ -11,10 +11,16 @@ const Certificate = ({name, organization, verification}) => {
 
     return ( 
         <div className={styles.certificateContainer}>
-            <div>
-                <StaticImage src="../../assets/images/certificate-logos/CourseraLogo.png" height={400} /> 
+            <div className={styles.content}>
+                <a href={verification}>
+                    <div className={styles.logoContainer}>
+                        <StaticImage className={styles.logo} src="../../assets/images/certificate-logos/CourseraLogo.png" /> 
+                    </div>
+                    <div className={styles.credentials}>
+                        <h3>Credentials</h3>
+                    </div>
+                </a>
             </div>
-            {/* <img className={styles.organizationLogo} src={logo} width="100px" height="100px" /> */}
             <div>
                 <h4>{name}</h4>
                 <p>{organization}</p>

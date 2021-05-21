@@ -1,5 +1,5 @@
 .certificateContainer {
-    width: 400px;
+    width: 300px;
     margin-left: 5%;
     margin-right: auto;
     //display: flex;
@@ -9,13 +9,75 @@
     //box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.organizationLogo {
-    margin-top: auto;
-    margin-bottom: auto;
+.logoContainer {
+    background-color: black;
 }
 
-@media (max-width: 480px) {
-    .certificateContainer {
-        width: 300px;
-    }
+.logo {
+    width: auto;
+    height: 150px;
 }
+
+.content {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.credentials {
+    background-color: red;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+}
+
+.content:hover .credentials {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+/*
+.logoContainer {
+    //overflow: hidden;
+    //background-color: black;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.logoContainer:hover {
+    opacity: 0.5;
+}
+
+.credentials {
+    background-color: red;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+}
+
+.certificateContainer:hover .credentials {
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+}
+
+/*.organizationLogo {
+    margin-top: auto;
+    margin-bottom: auto;
+}*/
+
