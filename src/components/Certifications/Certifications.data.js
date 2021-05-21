@@ -1,5 +1,10 @@
 export const certificates = [
     {
+        name: "M001: MongoDB Basics",
+        organization: "MongoDB",
+        verification: "https://university.mongodb.com/course_completion/39149f52-78ca-4fb7-9b0d-318d838931ef?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing"
+    },
+    {
         name: "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
         organization: "Coursera",
         verification: "https://www.coursera.org/account/accomplishments/certificate/EMPKCGEUW92A"
