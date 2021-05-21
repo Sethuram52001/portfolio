@@ -12,7 +12,7 @@ const Certificate = ({name, organization, verification}) => {
     return ( 
         <div className={styles.certificateContainer}>
             <div>
-                <StaticImage src="../../assets/images/certificate-logos/CourseraLogo.png" /> 
+                <StaticImage src="../../assets/images/certificate-logos/CourseraLogo.png" height={400} /> 
             </div>
             {/* <img className={styles.organizationLogo} src={logo} width="100px" height="100px" /> */}
             <div>

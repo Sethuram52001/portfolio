@@ -2,21 +2,17 @@ import React from 'react';
 import * as styles from "./Education.module.scss";
 import { StaticImage } from "gatsby-plugin-image";
 import {education} from "./Education.data";
+import EducationCard from "../EducationCard/EducationCard";
 
 const Education = () => {
 
     return ( 
         <div id="education">
             <h1>Education</h1>
-            <div className={styles.education_card}>
-                <div>
-                    <StaticImage src="../../assets/images/education-logos/TCE.png" alt="TCE" />
-                </div>
-                <div>
-                    <h3>{education[0].name}</h3>
-                    <p>{education[0].degree}</p>
-                    <p>{education[0].time}</p>
-                </div>
+            <div>
+                {education.map((edu, index) => (
+                    <EducationCard name={edu.name} degree={edu.degree} time={edu.time} />
+                ))}
             </div>
         </div>
      );
