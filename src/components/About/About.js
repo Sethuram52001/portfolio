@@ -1,6 +1,5 @@
 import React from 'react';
 import * as styles from "./About.module.scss";
-import {StaticImage} from "gatsby-plugin-image";
 import Lottie from "react-lottie";
 import animationData from "../../assets/animations/student.json";
 

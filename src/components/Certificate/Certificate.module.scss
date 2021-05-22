@@ -9,8 +9,8 @@
     //box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.logoContainer {
-    background-color: black;
+.content:hover .logoContainer {
+    opacity: 0.5;
 }
 
 .logo {
@@ -26,58 +26,36 @@
 }
 
 .credentials {
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 50%;
+    height: 95%;
     left: 50%;
     opacity: 0;
+    text-decoration: none;
+    color: white;
 }
 
 .content:hover .credentials {
-    top: 50%;
-    left: 50%;
-    opacity: 1;
-}
-
-/*
-.logoContainer {
-    //overflow: hidden;
-    //background-color: black;
-    background: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    height: 99%;
-    width: 100%;
-    left: 0;
+    //top: 50%;
     top: 0;
-    bottom: 0;
+    //left: 50%;
+    left: 0;
     right: 0;
-    opacity: 0;
-}
-
-.logoContainer:hover {
-    opacity: 0.5;
-}
-
-.credentials {
-    background-color: red;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    opacity: 0;
-}
-
-.certificateContainer:hover .credentials {
     opacity: 1;
-    top: 50%;
-    left: 50%;
 }
 
-/*.organizationLogo {
-    margin-top: auto;
-    margin-bottom: auto;
-}*/
+.credentialsText {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
 
+@media (max-width: 768px) {
+    .certificateContainer {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

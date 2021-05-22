@@ -12,19 +12,18 @@ const Certificate = ({name, organization, verification}) => {
     return ( 
         <div className={styles.certificateContainer}>
             <div className={styles.content}>
-                <a href={verification}>
+                <a href={verification} rel="noreferrer">
                     <div className={styles.logoContainer}>
                         <StaticImage className={styles.logo} src="../../assets/images/certificate-logos/CourseraLogo.png" /> 
                     </div>
                     <div className={styles.credentials}>
-                        <h3>Credentials</h3>
+                        <h3 className={styles.credentialsText}>View credentials</h3>
                     </div>
                 </a>
             </div>
             <div>
                 <h4>{name}</h4>
                 <p>{organization}</p>
-                <a href={verification} target="_blank">See credentials</a>
             </div>
         </div>
      );

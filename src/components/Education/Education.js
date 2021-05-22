@@ -1,13 +1,12 @@
 import React from 'react';
 import * as styles from "./Education.module.scss";
-import { StaticImage } from "gatsby-plugin-image";
 import {education} from "./Education.data";
 import EducationCard from "../EducationCard/EducationCard";
 
 const Education = () => {
 
     return ( 
-        <div id="education">
+        <div id="education" className={styles.educationSection}>
             <h1>Education</h1>
             <div className={styles.education_container}>
                 {education.map((edu, index) => (

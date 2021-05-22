@@ -6,9 +6,9 @@ import {certificates} from "./Certifications.data";
 const Certifications = () => {
 
     return ( 
-        <div id="certifcations">
+        <div id="certifcations" className={styles.certificationsSection}>
             <h1>Certifications</h1>
-            <div className={styles.certifications_container}>
+            <div className={styles.certificationsContainer}>
                 {certificates.map((certificate, index) => (
                     <Certificate name={certificate.name} organization={certificate.organization} verification={certificate.verification} />
                 ))}

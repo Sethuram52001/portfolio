@@ -1,5 +1,15 @@
-.certifications_container {
+.certificationsSection {
+    margin: 1rem;
+}
+
+.certificationsContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+    .certificationsContainer {
+        justify-content: space-around;
+    }
 }

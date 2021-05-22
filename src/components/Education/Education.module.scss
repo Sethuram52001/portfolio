@@ -1,4 +1,16 @@
+.educationSection {
+    margin: 1rem;
+}
+
 .education_container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
+    margin: 5rem;
+}
+
+@media (max-width: 768px) {
+    .education_container {
+        justify-content: space-around;
+    }
 }

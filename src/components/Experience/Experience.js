@@ -1,13 +1,12 @@
 import React from 'react';
 import * as styles from "./Experience.module.scss";
-import { StaticImage } from "gatsby-plugin-image";
 import {experiences} from "./Experience.data"; 
 import ExperienceCard from '../ExperienceCard/ExperienceCard';
 
 const Experience = () => {
 
     return ( 
-        <div id="experience">
+        <div id="experience" className={styles.experienceSection}>
             <h1>Experience</h1>
             <div className={styles.experience_container}>
                 {experiences.map((experience, index) => (

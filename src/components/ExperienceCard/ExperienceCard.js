@@ -12,7 +12,7 @@ const ExperienceCard = ({company_name, role, period, verification}) => {
                 <h3>{company_name}</h3>
                 <p>{role}</p>
                 <p>{period}</p>
-                <a href={verification} target="_blank">See credentials</a>
+                <a href={verification} target="_blank" rel="noreferrer">See credentials</a>
             </div>
         </div>
      );
