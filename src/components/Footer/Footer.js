@@ -5,9 +5,9 @@ import {StaticImage} from "gatsby-plugin-image";
 
 const Footer = () => {
     return ( 
-        <div className={styles.div}>
+        <div id="#footer" className={styles.footer}>
             <p>Reach out to me!</p>
-            <StaticImage src="../../assets/images/MyImg/MyImage.jpeg" quality={100} className={styles.myImage} />
+            <StaticImage src="../../assets/images/MyImg/MyImage.jpeg" quality={100} width={200} height={200} className={styles.myImage} />
         </div>
      );
 }

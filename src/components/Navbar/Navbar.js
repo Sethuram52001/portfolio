@@ -1,4 +1,50 @@
 import React from 'react';
+import Headroom from "react-headroom";
+import * as styles from "./Navbar.module.scss";
+
+const Navbar = () => {
+    return ( 
+        <Headroom>
+            <header className={styles.header}>
+                <a>
+                <span>{"<Sethuram/>"}</span>
+                </a>
+                <ul className={styles}>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#blogs">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#certifications">Certifications</a>
+                    </li>
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#footer">Contact Me</a>
+                    </li>
+                </ul>
+            </header>
+        </Headroom>
+     );
+}
+ 
+export default Navbar;
+
+
+/*
+import React from 'react';
 import {Link} from "gatsby";
 import * as styles from "./Navbar.module.scss";
 import Navbar from 'react-bootstrap/Navbar';
@@ -43,29 +89,4 @@ const NavBar = () => {
      );
 }
  
-export default NavBar;
-
-/*      <ul className={styles.navbar_container}>
-            <p>{"<Sethuram/>"}</p>
-            <li className={styles.navbar_links}>
-                <Link href="#education">Education</Link>
-            </li>
-            <li className={styles.navbar_links}>
-                <Link href="#skills">Skills</Link>
-            </li>
-            <li className={styles.navbar_links}>
-                <Link href="#blogs">Blogs</Link>
-            </li>
-            <li className={styles.navbar_links}>
-                <Link href="#certifcations">Certifications</Link>
-            </li>
-            <li className={styles.navbar_links}> 
-                <Link href="#projects">Projects</Link>
-            </li>
-            <li className={styles.navbar_links}>
-                <Link href="#about">About Me</Link>
-            </li>
-            <li className={styles.navbar_links}>
-                <Link href="#experience">Experience</Link>
-            </li>
-        </ul>*/
+*/
