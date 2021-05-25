@@ -2,7 +2,6 @@ import React from 'react';
 import {OverlayTrigger, Tooltip} from "react-bootstrap";
 
 const SkillComponent = ({skill}) => {
-    console.log(skill)
     return ( 
         <OverlayTrigger
             key={skill.name}

@@ -10,6 +10,7 @@ import Education from "../components/Education/Education";
 import Experience from "../components/Experience/Experience";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
+import Dummy from "../components/Dummy/Dummy";
 
 const IndexPage = () => (
   <Layout>

@@ -1,20 +1,17 @@
 import React from 'react';
-//import CourseraLogo from "../../assets/images/certificate-logos/coursera.svg";
-//import HCLogo from "../../assets/images/certificate-logos/hackerrank.svg";
 import * as styles from "./Certificate.module.scss";
-import CourseraLogo from "../../assets/images/certificate-logos/CourseraLogo.png"; 
-import {StaticImage} from "gatsby-plugin-image";
+import {GatsbyImage, getImage} from "gatsby-plugin-image";
 
-const Certificate = ({name, organization, verification}) => {
-
-    //let logo = (organization === "Coursera") ? CourseraLogo : HCLogo; 
+const Certificate = ({name, organization, verification, image_data}) => {
+    console.log(image_data)
+    const image = getImage(image_data)
 
     return ( 
         <div className={styles.certificateContainer}>
             <div className={styles.content}>
                 <a href={verification} rel="noreferrer">
                     <div className={styles.logoContainer}>
-                        <StaticImage className={styles.logo} src="../../assets/images/certificate-logos/CourseraLogo.png" /> 
+                        <GatsbyImage image={image} alt="image" />
                     </div>
                     <div className={styles.credentials}>
                         <h3 className={styles.credentialsText}>View credentials</h3>
