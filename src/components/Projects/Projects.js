@@ -11,7 +11,7 @@ const Projects = () => {
             <p>Here are some my projects which I loved working on, and explored new territories while doing so!</p>
             <div className={styles.projectContainer}>
                 {projects.map((project, index) => (
-                    <ProjectCard title={project.title} intro={project.intro} lang={project.lang} stars={project.stars} forks={project.forks} />
+                    <ProjectCard title={project.title} intro={project.intro} lang={project.lang} stars={project.stars} forks={project.forks} image_name={project.image} />
                 ))}
             </div>
         </div>

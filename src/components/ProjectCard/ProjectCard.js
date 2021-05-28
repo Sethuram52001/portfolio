@@ -2,12 +2,19 @@ import React from 'react';
 import * as styles from "./ProjectCard.module.scss";
 import {colors} from "./github_official_colors_lang";
 import { StaticImage } from "gatsby-plugin-image";
+import PathVisualizerImage from "../../assets/images/project-images/Pathfinding-Visualizer.jpeg";
+import SortingVisualizerImage from "../../assets/images/project-images/Sorting-Visualizer.jpeg";
+import TrelloCloneImage from "../../assets/images/project-images/Trello-Clone.jpeg";
+import HPWikiImage from "../../assets/images/project-images/Harry-Potter-Wiki.jpeg";
 
-const ProjectCard = ({title, intro, lang, stars, forks}) => {
+const ProjectCard = ({title, intro, lang, stars, forks, image_name}) => {
+
+    const image = image_name === "Pathfinding-Visualizer" ? PathVisualizerImage : image_name === "Sorting-Visualizer" ? SortingVisualizerImage : image_name === "Trello-Clone" ? TrelloCloneImage : image_name === "Harry-Potter-Wiki" ? HPWikiImage : null;
+
     return ( 
         <div data-sal="slide-up" data-sal-delay="300" data-sal-easing="easy" className={styles.card}>
             <div>
-                <StaticImage src="../../assets/images/project-images/pathfinding.png" alt="project_image" />
+                <img src={image} alt={image_name} />
             </div>
             <div className={styles.card_title}>{title}</div>
             <div className={styles.card_body}>
