@@ -4,6 +4,7 @@ import Lottie from "react-lottie";
 import animationData from "../../assets/animations/student.json";
 import SocialLinks from '../SocialLinks/SocialLinks';
 import { Link } from 'gatsby';
+import {Button} from "reactstrap";
 
 const About = () => {
 
@@ -18,8 +19,8 @@ const About = () => {
             <div>
                 <h1 className={styles.title}>
                     Hi all I'm Sethuram
-                    <span>
-                        <img src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" alt="👋" />
+                    <span className={styles.waveEmoji}>
+                        👋
                     </span>
                 </h1>
                 <p className={styles.subtitle}>
@@ -27,7 +28,11 @@ const About = () => {
                     I'm also intrigued by data structures and algorithms and occassionaly write blogs on them.
                 </p>
                 <SocialLinks />
-                <Link target="_blank" to="https://drive.google.com/drive/u/0/folders/1zKfGLvNqZTv6KGgjAUxJMPTOrhqUt1Lf">Resume</Link>
+                <Button
+                    href="https://drive.google.com/drive/u/0/folders/1zKfGLvNqZTv6KGgjAUxJMPTOrhqUt1Lf"
+                >
+                    <span>See My Resume</span>
+                </Button>
             </div>
             <div className={styles.lottieConatiner}>
                 <Lottie options={defaultOptions} />

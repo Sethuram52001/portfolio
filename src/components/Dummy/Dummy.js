@@ -5,42 +5,18 @@ import DummyComponent from './DummyComponent';
 
 const Dummy = () => {
 
-    /*const data = useStaticQuery(graphql`
-        query {
-            allFile(filter: {relativeDirectory: {eq: "images/certificate-logos"}}) {
-                nodes {
-                    relativePath 
-                    childImageSharp {
-                        gatsbyImageData(
-                            width: 300
-                        )
-                    }
-                }
-            }
-        }
-    `)*/
-
     const data = useStaticQuery(graphql`
-        query {
-            allFile(filter: {relativeDirectory: {eq: "images/certificate-logos"}}) {
-                nodes {
-                  relativePath
-                  childImageSharp {
-                    gatsbyImageData(width: 200)
-                  }
-                }
+    query {
+        allFile(filter: {relativeDirectory: {eq: "images/certificate-logos"}}) {
+            nodes {
+              relativePath
+              childImageSharp {
+                gatsbyImageData
               }
-        }
-    `);
-
-    certificates.map((o,i) => {
-        data.allFile.nodes.reduce((t,c) => {
-            console.log(c.relativePath, o.image)
-            if(c.relativePath === `images/certificate-logos/${o.image}`) {
-                
             }
-        })
-    })
+        }            
+    }
+`);
 
     return ( 
         <div>
@@ -48,16 +24,19 @@ const Dummy = () => {
             
             {certificates.map((certificate, index) => (
                 <DummyComponent 
-                    image_name={certificate.image}
-                    image_data={
-                        data.allFile.nodes.reduce((t,c) => {
-                            console.log(c.relativePath, certificate.image)
-                            if(c.relativePath === `images/certificate-logos/${certificate.image}`) {
-                                console.log(c.relativePath)
-                                return c
-                            }
-                        })
-                    }
+                image_name={certificate.image}
+                image_data={
+                    data.allFile.nodes.reduce((t,c) => {
+                        console.log(c)
+                        if(c.relativePath === `images/certificate-logos/${certificate.image}`) {
+                            console.log(c)
+                            return c
+                        }
+                        else {
+                            console.log("error: "+ c.relativePath);
+                        }
+                    })
+                }  
                 />
             ))}
         </div>

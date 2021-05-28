@@ -33,3 +33,11 @@ export const skill_icons = [
     {src: GitIcon, name: "Git"},
     {src: NPMIcon, name: "NPM"}
 ];
+
+export const skill_section = {
+    skills: [
+       "Building responsive websites using React and other frameworks",
+       "Building application backend using Node and Express",
+       "SPA (Single Page Application) Stacks and PWA (Progressive Web Applications)" 
+    ]
+}

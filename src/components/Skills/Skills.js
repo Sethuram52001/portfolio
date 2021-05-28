@@ -4,7 +4,7 @@ import SkillComponent from '../SkillComponent/SkillComponent';
 import animationData from "../../assets/animations/web-development.json";
 import Lottie from "react-lottie";
 import {StaticImage} from "gatsby-plugin-image";
-import {skill_icons} from "./Skills.data";
+import {skill_icons, skill_section} from "./Skills.data";
 
 const Skills = () => {
 
@@ -27,18 +27,14 @@ const Skills = () => {
                         <SkillComponent skill={skill} />
                     ))}
                     <div className={styles.skillDetails}>
-                        <p>
-                            <StaticImage alt="⚡" src="https://twemoji.maxcdn.com/2/72x72/26a1.png" width={15} height={15} />
-                            I love blah blah
-                        </p>
-                        <p>
-                            <StaticImage alt="⚡" src="https://twemoji.maxcdn.com/2/72x72/26a1.png" width={15} height={15} />
-                            I love blah blah
-                        </p>
-                        <p>
-                            <StaticImage alt="⚡" src="https://twemoji.maxcdn.com/2/72x72/26a1.png" width={15} height={15} />
-                            I love blah blah
-                        </p>
+                        {skill_section.skills.map((skill, index) => {
+                            return (
+                                <p key={index}>
+                                    <StaticImage alt="⚡" src="https://twemoji.maxcdn.com/2/72x72/26a1.png" width={15} height={15} />
+                                    {skill}
+                                </p>
+                            )
+                        })}
                     </div>
                 </div>
             </div>

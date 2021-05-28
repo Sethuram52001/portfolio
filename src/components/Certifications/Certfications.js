@@ -20,19 +20,6 @@ const Certifications = () => {
         }
     }, [showStatus, limit]);
 
-    const data = useStaticQuery(graphql`
-        query {
-            allFile(filter: {relativeDirectory: {eq: "images/certificate-logos"}}) {
-                nodes {
-                  relativePath
-                  childImageSharp {
-                    gatsbyImageData
-                  }
-                }
-            }            
-        }
-    `);
-
     return ( 
         <div id="certifications" className={styles.certificationsSection}>
             <h1>Certifications</h1>
@@ -42,18 +29,7 @@ const Certifications = () => {
                         name={certificate.name} 
                         organization={certificate.organization} 
                         verification={certificate.verification} 
-                        image_data={
-                            data.allFile.nodes.reduce((t,c) => {
-                                console.log(c)
-                                if(c.relativePath === `images/certificate-logos/${certificate.image}`) {
-                                    console.log(c)
-                                    return c
-                                }
-                                else {
-                                    console.log("why")
-                                }
-                            })
-                        }                 
+                        image_name={certificate.image}             
                     />
                 ))}
             </div>
