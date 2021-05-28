@@ -5,6 +5,7 @@ import animationData from "../../assets/animations/web-development.json";
 import Lottie from "react-lottie";
 import {StaticImage} from "gatsby-plugin-image";
 import {skill_icons, skill_section} from "./Skills.data";
+import LottieDisplay from '../LottieDisplay/LottieDisplay';
 
 const Skills = () => {
 
@@ -20,7 +21,7 @@ const Skills = () => {
             <p className={styles.subtitle}>I love learning new tech stacks in the field of web-dev. And aspire to explore all the tech stack which intrigues me.</p>
             <div className={styles.skillContainer}>
                 <div className={styles.lottieContainer}>
-                    <Lottie options={defaultOptions} />
+                    <LottieDisplay lottieFile={animationData} />
                 </div>
                 <div>
                     {skill_icons.map((skill, index) => (

@@ -1,10 +1,10 @@
 import React from 'react';
 import * as styles from "./About.module.scss";
-import Lottie from "react-lottie";
 import animationData from "../../assets/animations/student.json";
 import SocialLinks from '../SocialLinks/SocialLinks';
 import { Link } from 'gatsby';
 import {Button} from "reactstrap";
+import LottieDisplay from '../LottieDisplay/LottieDisplay';
 
 const About = () => {
 
@@ -35,15 +35,10 @@ const About = () => {
                 </Button>
             </div>
             <div className={styles.lottieConatiner}>
-                <Lottie options={defaultOptions} />
+                <LottieDisplay lottieFile={animationData} />
             </div>
         </div>
      );
 }
  
 export default About;
-/* <StaticImage 
-                src="../../assets/images/MyImg/MyImage.jpeg"
-                alt="my profile"
-                quality="100"
-    /> */
