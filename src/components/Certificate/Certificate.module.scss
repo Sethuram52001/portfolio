@@ -41,7 +41,6 @@
     opacity: 0;
     text-decoration: none;
     color: white;
-    font-family: $fontStyle;
 }
 
 .content:hover .credentials {
@@ -58,6 +57,7 @@
     top: 50%;
     left: 0;
     right: 0;
+    font-family: $fontStyle;
 }
 
 @media (max-width: 768px) {

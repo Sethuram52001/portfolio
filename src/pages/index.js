@@ -8,9 +8,9 @@ import Blogs from "../components/Blogs/Blogs";
 import Certifications from "../components/Certifications/Certfications";
 import Education from "../components/Education/Education";
 import Experience from "../components/Experience/Experience";
-import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import Dummy from "../components/Dummy/Dummy";
+import ContactMe from "../components/ContactMe/ContactMe";
 
 const IndexPage = () => (
   <Layout>
@@ -22,7 +22,7 @@ const IndexPage = () => (
     <Certifications />
     <Education />
     <Experience />
-    <Footer />
+    <ContactMe />
   </Layout>
 )
 
