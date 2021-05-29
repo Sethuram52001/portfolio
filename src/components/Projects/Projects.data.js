@@ -5,7 +5,8 @@ export const projects = [
         lang: "JavaScript",
         stars: "33",
         forks: "10",
-        image: "Pathfinding-Visualizer"
+        image: "Pathfinding-Visualizer",
+        url: "https://github.com/Sethuram52001/Path-Finding-Visualizer"
     },
     {
         title: "sorting-visualizer",
@@ -13,7 +14,8 @@ export const projects = [
         lang: "JavaScript",
         stars: "6",
         forks: "3",
-        image: "Sorting-Visualizer" 
+        image: "Sorting-Visualizer",
+        url: "https://github.com/Sethuram52001/sorting-visualizer"
     },
     {
         title: "TrelloClone",
@@ -21,7 +23,8 @@ export const projects = [
         lang: "JavaScript",
         stars: "2",
         forks: "1",
-        image: "Trello-Clone"
+        image: "Trello-Clone",
+        url: "https://github.com/Sethuram52001/TrelloClone"
     },
     {
         title: "harry-potter-app",
@@ -29,6 +32,7 @@ export const projects = [
         lang: "JavaScript",
         stars: "3",
         forks: "0",
-        image: "Harry-Potter-Wiki"
+        image: "Harry-Potter-Wiki",
+        url: "https://github.com/Sethuram52001/harry-potter-app"
     }
 ];
