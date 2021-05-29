@@ -6,17 +6,20 @@ import {useStaticQuery,graphql} from "gatsby";
 
 const Certifications = () => {
 
+    const ShowMore = "Show More";
+    const ShowLess = "Show Less";
+
     const [limit, setLimit] = useState(6);
-    const [showStatus, setShowStatus] = useState("Show More");
+    const [showStatus, setShowStatus] = useState(ShowMore);
 
     const handleShow = useCallback(() => {
-        if(showStatus === "Show More") {
+        if(showStatus === ShowMore) {
             setLimit(certificates.length);
-            setShowStatus("Show Less");
+            setShowStatus(ShowLess);
         }
         else {
             setLimit(6);
-            setShowStatus("Show more");
+            setShowStatus(ShowMore);
         }
     }, [showStatus, limit]);
 
