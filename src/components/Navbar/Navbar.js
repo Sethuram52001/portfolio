@@ -1,26 +1,26 @@
 import React from 'react';
 import Headroom from "react-headroom";
-import "./Navbar.scss";
+import * as styles from  "./Navbar.module.scss";
 
 const NavBar = () => {
 
     return ( 
         <Headroom>
-        <header className={"header"}>
-          <a href="/" className="logo">
-            <span className="grey-color"> &lt;</span>
-            <span className="logo-name">{"Sethuram"}</span>
-            <span className="grey-color">/&gt;</span>
+        <header className={styles.header}>
+          <a href="/" className={styles.logo}>
+            <span className={styles.greyColor}> &lt;</span>
+            <span className={styles.logoName}>{"Sethuram"}</span>
+            <span className={styles.greyColor}>/&gt;</span>
           </a>
-          <input className="menu-btn" type="checkbox" id="menu-btn" />
+          <input className={styles.menuBtn} type="checkbox" id="menu-btn" />
           <label
-            className="menu-icon"
+            className={styles.menuIcon}
             htmlFor="menu-btn"
             style={{color: "white"}}
           >
-            <span className={"navicon"}></span>
+            <span className={styles.navicon}></span>
           </label>
-          <ul className={"menu"}>
+          <ul className={styles.menu}>
               <li>
                 <a href="#skills">Skills</a>
               </li>

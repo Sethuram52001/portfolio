@@ -6,7 +6,7 @@ const ExperienceCard = ({company_name, role, period, verification}) => {
     return ( 
         <div className={styles.experience_card}>
             <div>
-                <StaticImage src="../../assets/images/experience-logos/TSF.png" alt="TSF" />
+                <StaticImage className={styles.companyLogo} src="../../assets/images/experience-logos/TSF.png" width={400} alt="TSF" />
             </div>
             <div>
                 <h3>{company_name}</h3>
