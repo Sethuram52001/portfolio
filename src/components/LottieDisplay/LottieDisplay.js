@@ -9,8 +9,8 @@ const LottieDisplay = ({lottieFile}) => {
     }
     
     return ( 
-        <div onClick={() => null}>
-            <Lottie options={defaultOptions} />
+        <div >
+            <Lottie isClickToPauseDisabled={true}options={defaultOptions} />
         </div>
      );
 }

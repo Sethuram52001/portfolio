@@ -2,24 +2,17 @@ import React from 'react';
 import * as styles from "./About.module.scss";
 import animationData from "../../assets/animations/student.json";
 import SocialLinks from '../SocialLinks/SocialLinks';
-import { Link } from 'gatsby';
 import {Button} from "reactstrap";
 import LottieDisplay from '../LottieDisplay/LottieDisplay';
 
 const About = () => {
-
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData
-    }
 
     return ( 
         <div id="about" className={styles.aboutContainer}>
             <div>
                 <h1 className={styles.title}>
                     Hi all I'm Sethuram
-                    <span className={styles.waveEmoji}>
+                    <span role="img" aria-label="" aria-hidden="false" className={styles.waveEmoji}>
                         👋
                     </span>
                 </h1>

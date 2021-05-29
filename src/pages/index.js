@@ -9,7 +9,6 @@ import Certifications from "../components/Certifications/Certfications";
 import Education from "../components/Education/Education";
 import Experience from "../components/Experience/Experience";
 import Navbar from "../components/Navbar/Navbar";
-import Dummy from "../components/Dummy/Dummy";
 import ContactMe from "../components/ContactMe/ContactMe";
 
 const IndexPage = () => (

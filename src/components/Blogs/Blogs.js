@@ -15,7 +15,14 @@ const Blogs = () => {
             </div>
             <div className={styles.blogContainer}>
                 {blogs.map((blog, index) => (
-                    <BlogCard title={blog.title} intro={blog.intro} published={blog.published} read={blog.read} link={blog.link} />
+                    <BlogCard
+                        key={index} 
+                        title={blog.title} 
+                        intro={blog.intro} 
+                        published={blog.published} 
+                        read={blog.read} 
+                        link={blog.link} 
+                    />
                 ))}
             </div>
         </div>

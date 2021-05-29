@@ -1,7 +1,6 @@
 import React from 'react';
 import * as styles from "./ProjectCard.module.scss";
 import {colors} from "./github_official_colors_lang";
-import { StaticImage } from "gatsby-plugin-image";
 import PathVisualizerImage from "../../assets/images/project-images/Pathfinding-Visualizer.jpeg";
 import SortingVisualizerImage from "../../assets/images/project-images/Sorting-Visualizer.jpeg";
 import TrelloCloneImage from "../../assets/images/project-images/Trello-Clone.jpeg";

@@ -12,8 +12,7 @@ import MongoIcon from "../../assets/images/skill-logos/mongodb.svg";
 import FirebaseIcon from "../../assets/images/skill-logos/firebase.svg";
 import GitIcon from "../../assets/images/skill-logos/git.svg";
 import NPMIcon from "../../assets/images/skill-logos/npm.svg";
-import GatsbyIcon from "../../assets/images/skill-logos/gatsby.svg";
-import NextIcon from "../../assets/images/skill-logos/next-js.svg";
+//import GatsbyIcon from "../../assets/images/skill-logos/gatsby.svg";
 import ExpressIcon from "../../assets/images/skill-logos/expressjs.svg";
 
 export const skill_icons = [

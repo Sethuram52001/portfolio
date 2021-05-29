@@ -2,18 +2,11 @@ import React from 'react';
 import * as styles from "./Skills.module.scss";
 import SkillComponent from '../SkillComponent/SkillComponent';
 import animationData from "../../assets/animations/web-development.json";
-import Lottie from "react-lottie";
 import {StaticImage} from "gatsby-plugin-image";
 import {skill_icons, skill_section} from "./Skills.data";
 import LottieDisplay from '../LottieDisplay/LottieDisplay';
 
 const Skills = () => {
-
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData
-    }
 
     return ( 
         <div id="skills">
@@ -25,13 +18,21 @@ const Skills = () => {
                 </div>
                 <div>
                     {skill_icons.map((skill, index) => (
-                        <SkillComponent skill={skill} />
+                        <SkillComponent 
+                            key={index}
+                            skill={skill} 
+                        />
                     ))}
                     <div className={styles.skillDetails}>
                         {skill_section.skills.map((skill, index) => {
                             return (
                                 <p key={index}>
-                                    <StaticImage alt="⚡" src="https://twemoji.maxcdn.com/2/72x72/26a1.png" width={15} height={15} />
+                                    <StaticImage 
+                                       src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
+                                       alt="⚡" 
+                                       width={15} 
+                                       height={15} 
+                                    />
                                     {skill}
                                 </p>
                             )

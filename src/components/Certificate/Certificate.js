@@ -1,6 +1,5 @@
 import React from 'react';
 import * as styles from "./Certificate.module.scss";
-import {GatsbyImage, getImage, StaticImage} from "gatsby-plugin-image";
 import Coursera_Logo from "../../assets/images/certificate-logos/Coursera_Logo.png";
 import MongoDB_Logo from "../../assets/images/certificate-logos/MongoDB_Logo.jpg";
 import HackerRank_Logo from "../../assets/images/certificate-logos/HackerRank_Logo.png";
@@ -8,8 +7,6 @@ import HackerRank_Logo from "../../assets/images/certificate-logos/HackerRank_Lo
 const Certificate = ({name, organization, verification, image_name}) => {
 
     const image = image_name === "Coursera_Logo.png" ? Coursera_Logo : image_name === "MongoDB_Logo.jpg" ? MongoDB_Logo : image_name === "HackerRank_Logo.png" ? HackerRank_Logo : null; 
-    console.log(image_name)
-    console.log(image)
 
     return ( 
         <div className={styles.certificateContainer}>
