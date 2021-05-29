@@ -16,7 +16,7 @@ const Skills = () => {
                 <div className={styles.lottieContainer}>
                     <LottieDisplay lottieFile={animationData} />
                 </div>
-                <div>
+                <div className={styles.skillsDisplay}>
                     {skill_icons.map((skill, index) => (
                         <SkillComponent 
                             key={index}
