@@ -52,11 +52,13 @@ const Certifications = () => {
                     />
                 ))}
             </div>
-            <Button
-                onClick={handleShow}
-            >
-                {showStatus}
-            </Button>
+            <div className={styles.showMore}>
+                <Button
+                    onClick={handleShow}
+                >
+                    {showStatus}
+                </Button>
+            </div>
         </div>
      );
 }

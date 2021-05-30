@@ -1,9 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import * as styles from './Blogs.module.scss';
 import BlogCard from '../BlogCard/BlogCard';
 import {blogs} from "./Blogs.data";
+import db from "../../config/firebase.config";
 
 const Blogs = () => {
+
+    /*const [data, setData] = useState([]);
+    const fetchData = async() => {
+        const response = db.collection('blogs');
+        const d = await response.get();
+        d.docs.forEach(item => {
+            setData([...data, item.data()])
+        })
+    }
+
+    useEffect(() => {
+        fetchData();
+    }, [])
+
+    console.log(data)*/
+    db.collection("blogs").get().then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            console.log(`${doc.id}`)
+        })
+    })
 
     return ( 
         <div id="blogs">

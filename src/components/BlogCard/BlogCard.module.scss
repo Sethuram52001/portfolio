@@ -19,7 +19,7 @@
     z-index: -1;
     top: -16px;
     right: -16px;
-    background: #55198b;
+    background: #2679ff;//#55198b;
     //background:rgb(136, 247, 255);;
     height: 32px;
     width: 32px;
@@ -36,7 +36,7 @@
 
 .blogCard:hover {
     color: white;
-    background-color: #55198b;
+    background-color: #2679ff;//#55198b;
     transition: all 0.5s ease-out;
     //box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     //box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -58,7 +58,7 @@
     overflow: hidden;
     top: 0;
     right: 0;
-    background-color: #55198b;
+    background-color: #2679ff;//#55198b;
     border-radius: 0 4px 0 32px;
     z-index: -1;
 }
