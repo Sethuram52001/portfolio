@@ -19,6 +19,10 @@
     justify-content: flex-start;
 }
 
+.showMore {
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .blogContainer {
         justify-content: space-around;

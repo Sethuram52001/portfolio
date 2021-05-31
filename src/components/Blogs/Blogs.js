@@ -1,33 +1,53 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import * as styles from './Blogs.module.scss';
 import BlogCard from '../BlogCard/BlogCard';
-import {blogs} from "./Blogs.data";
 import db from "../../config/firebase.config";
-import { doc } from 'prettier';
+import { Button } from 'react-bootstrap';
+
+function calculateLimit() {
+    if(window.length > 768) {
+        return 4;
+    }
+    else if(window.length <= 768 && window.length > 480) {
+        return 4;
+    }
+    else if(window.length <= 480) {
+        return 2;
+    }
+    else {
+        return 6;
+    }
+}
 
 const Blogs = () => {
 
-    const [data, setData] = useState([]);
-    /*const fetchData = async() => {
-        const response = db.collection('blogs').orderBy('chrono_order', "desc");
-        const d = await response.get();
-        console.log(d.docs)
-        d.docs.forEach(item => {
-            setData([...data, item.data()])
-        })
-    }
+    const [blogs, setBlogs] = useState([]);
 
-    useEffect(() => {
-        fetchData();
-    }, [])*/
-
-    db.collection('blogs').orderBy("chrono_order", "desc")
+    db.collection('blogs')
+        .orderBy("chrono_order", "desc")
         .get()
         .then(querySnapshot => {
             const documents = querySnapshot.docs.map(doc => doc.data())
             console.log(documents)
-            setData(documents)
-        })
+            setBlogs(documents)
+    })
+
+    const ShowMore = "Show More";
+    const ShowLess = "Show Less";
+
+    const [limit, setLimit] = useState(calculateLimit());
+    const [showStatus, setShowStatus] = useState(ShowMore);
+
+    const handleShow = useCallback(() => {
+        if(showStatus === ShowMore) {
+            setLimit(blogs.length);
+            setShowStatus(ShowLess);
+        }
+        else {
+            setLimit(calculateLimit());
+
+        }
+    }, [showStatus]);
 
     return ( 
         <div id="blogs">
@@ -38,7 +58,7 @@ const Blogs = () => {
                 </p>
             </div>
             <div className={styles.blogContainer}>
-                {data.map((blog, index) => (
+                {blogs.slice(0, limit).map((blog, index) => (
                     <BlogCard
                         key={index} 
                         title={blog.title} 
@@ -48,6 +68,13 @@ const Blogs = () => {
                         link={blog.link} 
                     />
                 ))}
+            </div>
+            <div className={styles.showMore}>
+                <Button
+                    onClick={handleShow}
+                >
+                    {showStatus}
+                </Button>
             </div>
         </div>
      );

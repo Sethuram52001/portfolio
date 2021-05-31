@@ -64,31 +64,3 @@ const Certifications = () => {
 }
  
 export default Certifications;
-
-/*
-    const data = useStaticQuery(graphql`
-        query {
-            allFile(filter: {relativeDirectory: {eq: "images/certificate-logos"}}) {
-                nodes {
-                    relativePath
-                    childImageSharp {
-                        fluid {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                }
-            }
-        }
-    `);
-
-      fluid={data.allFile.nodes.reduce((t,c) => {
-                            console.log(c.relativePath, certificate.image);
-                            if(c.relativePath === `images/certificate-logos/${certificate.image.trim()}`) {
-                                console.log(c.childImageSharp.fluid)
-                                return c.childImageSharp.fluid
-                            }
-                            if(t) {
-                                return t
-                            }
-                        }, undefined)}  
-*/
