@@ -21,8 +21,8 @@ const Certificate = ({name, organization, verification, image_name}) => {
                 </a>
             </div>
             <div className={styles.certificateBody}>
-                <h4>{name}</h4>
-                <p>{organization}</p>
+                <h4 className={styles.certificateName}>{name}</h4>
+                <p className={styles.certificateOrganization}>{organization}</p>
             </div>
         </div>
      );

@@ -1,7 +1,6 @@
 import firebase from 'firebase';
-require('dotenv').config();
 
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: process.env.apiKey,
   authDomain: process.env.authDomain,
   projectId: process.env.projectId,

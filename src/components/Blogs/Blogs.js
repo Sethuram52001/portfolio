@@ -3,13 +3,15 @@ import * as styles from './Blogs.module.scss';
 import BlogCard from '../BlogCard/BlogCard';
 import {blogs} from "./Blogs.data";
 import db from "../../config/firebase.config";
+import { doc } from 'prettier';
 
 const Blogs = () => {
 
-    /*const [data, setData] = useState([]);
-    const fetchData = async() => {
-        const response = db.collection('blogs');
+    const [data, setData] = useState([]);
+    /*const fetchData = async() => {
+        const response = db.collection('blogs').orderBy('chrono_order', "desc");
         const d = await response.get();
+        console.log(d.docs)
         d.docs.forEach(item => {
             setData([...data, item.data()])
         })
@@ -17,14 +19,15 @@ const Blogs = () => {
 
     useEffect(() => {
         fetchData();
-    }, [])
+    }, [])*/
 
-    console.log(data)*/
-    db.collection("blogs").get().then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-            console.log(`${doc.id}`)
+    db.collection('blogs').orderBy("chrono_order", "desc")
+        .get()
+        .then(querySnapshot => {
+            const documents = querySnapshot.docs.map(doc => doc.data())
+            console.log(documents)
+            setData(documents)
         })
-    })
 
     return ( 
         <div id="blogs">
@@ -35,7 +38,7 @@ const Blogs = () => {
                 </p>
             </div>
             <div className={styles.blogContainer}>
-                {blogs.map((blog, index) => (
+                {data.map((blog, index) => (
                     <BlogCard
                         key={index} 
                         title={blog.title} 

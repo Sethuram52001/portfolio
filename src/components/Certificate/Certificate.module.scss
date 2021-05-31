@@ -17,6 +17,15 @@
 
 .certificateBody {
     vertical-align: middle;
+    background-color: black;
+}
+
+.certificateName {
+    color: green;
+}
+
+.certificateOrganization {
+    color: red;
 }
 
 .content:hover .logoContainer {
