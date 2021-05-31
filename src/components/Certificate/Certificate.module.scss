@@ -16,16 +16,18 @@
 }
 
 .certificateBody {
-    vertical-align: middle;
-    background-color: black;
+    display: flex;
+    align-items: center;
 }
 
 .certificateName {
     color: green;
+    display: block;
 }
 
 .certificateOrganization {
     color: red;
+    display: block;
 }
 
 .content:hover .logoContainer {

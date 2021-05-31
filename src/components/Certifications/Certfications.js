@@ -3,28 +3,14 @@ import * as styles from "./Certifications.module.scss";
 import Certificate from '../Certificate/Certificate';
 import {certificates} from "./Certifications.data";
 import { Button } from 'react-bootstrap';
-
-function calculateLimit() {
-    if(window.length > 768) {
-        return 6;
-    }
-    else if(window.length <= 768 && window.length > 480) {
-        return 4;
-    }
-    else if(window.length <= 480) {
-        return 2;
-    }
-    else {
-        return 6;
-    }
-}
+import {calculateLimit} from "../../utils/calculateLimit.certificates";
 
 const Certifications = () => {
 
     const ShowMore = "Show More";
     const ShowLess = "Show Less";
 
-    const [limit, setLimit] = useState(calculateLimit());
+    const [limit, setLimit] = useState(calculateLimit);
     const [showStatus, setShowStatus] = useState(ShowMore);
 
     const handleShow = useCallback(() => {

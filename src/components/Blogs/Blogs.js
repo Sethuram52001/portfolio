@@ -1,41 +1,29 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import * as styles from './Blogs.module.scss';
 import BlogCard from '../BlogCard/BlogCard';
 import db from "../../config/firebase.config";
 import { Button } from 'react-bootstrap';
-
-function calculateLimit() {
-    if(window.length > 768) {
-        return 4;
-    }
-    else if(window.length <= 768 && window.length > 480) {
-        return 4;
-    }
-    else if(window.length <= 480) {
-        return 2;
-    }
-    else {
-        return 6;
-    }
-}
+import {calculateLimit} from "../../utils/calculateLimit.blogs";
+import {blogs} from "./Blogs.data";
 
 const Blogs = () => {
 
-    const [blogs, setBlogs] = useState([]);
+    //const [blogs, setBlogs] = useState([]);
 
-    db.collection('blogs')
-        .orderBy("chrono_order", "desc")
-        .get()
-        .then(querySnapshot => {
-            const documents = querySnapshot.docs.map(doc => doc.data())
-            console.log(documents)
-            setBlogs(documents)
-    })
+    // db.collection('blogs')
+    //     .orderBy("chrono_order", "desc")
+    //     .get()
+    //     .then(querySnapshot => {
+    //         const documents = querySnapshot.docs.map(doc => doc.data())
+    //         console.log(documents)
+    //         setBlogs(documents)
+    // })
 
+    console.log(calculateLimit())
     const ShowMore = "Show More";
     const ShowLess = "Show Less";
 
-    const [limit, setLimit] = useState(calculateLimit());
+    const [limit, setLimit] = useState(4);
     const [showStatus, setShowStatus] = useState(ShowMore);
 
     const handleShow = useCallback(() => {
@@ -44,7 +32,7 @@ const Blogs = () => {
             setShowStatus(ShowLess);
         }
         else {
-            setLimit(calculateLimit());
+            setLimit(4);
 
         }
     }, [showStatus]);

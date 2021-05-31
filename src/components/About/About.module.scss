@@ -1,6 +1,7 @@
 @import '../../styles/globalColor.scss';
 @import '../../styles/globalFontSize.scss';
 @import '../../styles/globalFonts.scss';
+@import '../../styles/mediaBreakPoints.scss';
 
 .title {
     font-size: $titleSize;
@@ -10,7 +11,7 @@
 
 .subtitle {
     font-size: $subTitleSize;
-    text-align: center;
+    text-align: justify;
     color: $subTitleColor;
     font-family: $fontStyle;
 }
@@ -23,9 +24,17 @@
     display: flex;
 }
 
+.aboutDetails {
+    padding: 3rem;
+}
+
 .resumeButton {
     background-color: blue;
     border-radius: 2px;
+}
+
+.socialSection {
+    text-align: center;
 }
 
 .waveEmoji {
@@ -70,7 +79,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
     .aboutContainer {
         display: block;
         text-align: center;

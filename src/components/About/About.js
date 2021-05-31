@@ -9,7 +9,7 @@ const About = () => {
 
     return ( 
         <div id="about" className={styles.aboutContainer}>
-            <div>
+            <div className={styles.aboutDetails}>
                 <h1 className={styles.title}>
                     Hi all I'm Sethuram
                     <span role="img" aria-label="" aria-hidden="false" className={styles.waveEmoji}>
@@ -20,12 +20,14 @@ const About = () => {
                     I'm a passionate learner in the field of web-development, currently having fun building web-apps with ReactJS / Javascript and some othe cool libraries and frameworks.
                     I'm also intrigued by data structures and algorithms and occassionaly write blogs on them.
                 </p>
-                <SocialLinks />
-                <Button
-                    href="https://drive.google.com/drive/u/0/folders/1zKfGLvNqZTv6KGgjAUxJMPTOrhqUt1Lf"
-                >
-                    <span>See My Resume</span>
-                </Button>
+                <div className={styles.socialSection}>
+                    <SocialLinks />
+                    <Button
+                        href="https://drive.google.com/drive/u/0/folders/1zKfGLvNqZTv6KGgjAUxJMPTOrhqUt1Lf"
+                    >
+                        <span>See My Resume</span>
+                    </Button>
+                </div>
             </div>
             <div className={styles.lottieConatiner}>
                 <LottieDisplay lottieFile={animationData} />
