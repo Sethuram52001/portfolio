@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Headroom from "react-headroom";
 import * as styles from  "./Navbar.module.scss";
+import {GlobalDispatchContext, GlobalStateContext} from "../../context/GlobalContextProvider";
 
 const NavBar = () => {
 
+    const dispatch = useContext(GlobalDispatchContext);
+    const state = useContext(GlobalStateContext);
     return ( 
         <Headroom>
         <header className={styles.header}>
@@ -35,6 +38,8 @@ const NavBar = () => {
               </li>
           </ul>
         </header>
+        {state.theme}
+        <button onClick={() => {dispatch({type: "TOGGLE_THEME"})}} type="button" >Toggle</button>
       </Headroom>
      );
 }
