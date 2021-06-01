@@ -10,9 +10,10 @@ import Education from "../components/Education/Education";
 import Experience from "../components/Experience/Experience";
 import Navbar from "../components/Navbar/Navbar";
 import ContactMe from "../components/ContactMe/ContactMe";
+import Main from "../components/Main/Main";
 
 const IndexPage = () => (
-  <Layout>
+  <Main>
     <Navbar />
     <About />
     <Skills />
@@ -22,7 +23,7 @@ const IndexPage = () => (
     <Education />
     <Experience />
     <ContactMe />
-  </Layout>
+  </Main>
 )
 
 export default IndexPage

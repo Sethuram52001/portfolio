@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import * as styles from "./About.module.scss";
 import animationData from "../../assets/animations/student.json";
 import SocialLinks from '../SocialLinks/SocialLinks';
 import {Button} from "reactstrap";
 import LottieDisplay from '../LottieDisplay/LottieDisplay';
+import { GlobalStateContext } from '../../context/GlobalContextProvider';
 
 const About = () => {
 
+    const isDark = useContext(GlobalStateContext);
+    
+
     return ( 
-        <div id="about" className={styles.aboutContainer}>
+        <div id="about" className={isDark.theme === "dark" ? `${styles.aboutContainer} ${styles.aboutContainerDark}` : `${styles.aboutContainer}`}>
             <div className={styles.aboutDetails}>
-                <h1 className={styles.title}>
+                <h1 className={isDark.theme === "dark" ? `${styles.titleDark}` : `${styles.title}`}>
                     Hi all I'm Sethuram
                     <span role="img" aria-label="" aria-hidden="false" className={styles.waveEmoji}>
                         👋

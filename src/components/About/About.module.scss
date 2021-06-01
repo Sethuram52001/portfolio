@@ -9,6 +9,12 @@
     font-family: $fontStyle;
 }
 
+.titleDark {
+    font-size: $titleSize;
+    color: $titleColorDark;
+    font-family: $fontStyle;
+}
+
 .subtitle {
     font-size: $subTitleSize;
     text-align: justify;
@@ -21,6 +27,11 @@
 }
 
 .aboutContainer {
+    display: flex;
+}
+
+.aboutContainerDark {
+    background-color: #171c28;
     display: flex;
 }
 
