@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import Headroom from "react-headroom";
 import * as styles from  "./Navbar.module.scss";
 import {GlobalDispatchContext, GlobalStateContext} from "../../context/GlobalContextProvider";
+import ToggleButton from '../ToggleButton/ToggleButton';
 
 const NavBar = () => {
 
@@ -36,12 +37,18 @@ const NavBar = () => {
               <li>
                 <a href="#contact">Contact Me</a>
               </li>
+              <li>
+                <ToggleButton />
+              </li>
           </ul>
         </header>
-        {state.theme}
-        <button onClick={() => {dispatch({type: "TOGGLE_THEME"})}} type="button" >Toggle</button>
       </Headroom>
      );
 }
  
 export default NavBar;
+/*
+
+        {state.theme}
+        <button onClick={() => {dispatch({type: "TOGGLE_THEME"})}} type="button" >Toggle</button>
+*/
