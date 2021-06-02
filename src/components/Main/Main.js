@@ -6,7 +6,7 @@ const Main = ({children}) => {
     const isDark = useContext(GlobalStateContext);
 
     return ( 
-        <div className={isDark.theme === "dark" ? 'bg-dark' : 'bg-light' }>
+        <div className={isDark.theme === "dark" ? 'dark-theme' : 'light-theme' }>
             {children}
         </div>
      );

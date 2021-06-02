@@ -11,6 +11,7 @@ import PropTypes from "prop-types"
 
 //import Header from "./header"
 import "./layout.css"
+import { GlobalStateContext } from "../context/GlobalContextProvider"
 
 const Layout = ({ children }) => {
   /*const data = useStaticQuery(graphql`
@@ -23,12 +24,15 @@ const Layout = ({ children }) => {
     }
   `)*/
 
+  const isDark = React.useContext(GlobalStateContext);
+
   return (
     <>
       <div
         style={{
           margin: `0 auto`
         }}
+        className={isDark === "dark" ? 'dark-theme' : 'light-theme'}
       >
         <main>{children}</main>
       </div>

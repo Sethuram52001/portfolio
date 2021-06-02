@@ -11,6 +11,7 @@ import Experience from "../components/Experience/Experience";
 import Navbar from "../components/Navbar/Navbar";
 import ContactMe from "../components/ContactMe/ContactMe";
 import Main from "../components/Main/Main";
+//import {About, Skills, Projects, Blogs, Certifications, Education, Experience, NavBar, ContactMe, Main} from "../components";
 
 const IndexPage = () => (
   <Main>
