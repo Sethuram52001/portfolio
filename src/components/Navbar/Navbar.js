@@ -38,7 +38,9 @@ const NavBar = () => {
                 <a href="#contact">Contact Me</a>
               </li>
               <li>
-                <ToggleButton />
+                <a>
+                  <ToggleButton />
+                </a>
               </li>
           </ul>
         </header>

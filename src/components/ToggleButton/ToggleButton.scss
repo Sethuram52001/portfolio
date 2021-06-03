@@ -17,7 +17,7 @@ input {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: white;
+  background-color: navy;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -39,7 +39,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: yello;
+  box-shadow: yellow;
 }
 
 input:checked + .slider::before {

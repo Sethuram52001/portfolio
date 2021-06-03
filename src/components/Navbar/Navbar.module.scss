@@ -1,8 +1,14 @@
+@import '../../styles/globalColor.scss';
+@import '../../styles/globalFontSize.scss';
+@import '../../styles/globalFonts.scss';
+@import '../../styles/mediaBreakPoints.scss';
+
 .header {
   background-color: white;
   max-width: 100%;
   padding: 15px 20px;
   margin: 0px auto;
+  font-family: $fontStyle;
 }
 
 .header ul {
