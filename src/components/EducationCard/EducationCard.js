@@ -8,8 +8,8 @@ const EducationCard = ({name, degree, time}) => {
             <div>
                 <StaticImage src="../../assets/images/education-logos/TCE.png" alt="TCE" />
             </div>
-            <div>
-                <h3>{name}</h3>
+            <div className={styles.educationDetails}>
+                <h3 className={styles.educationName}>{name}</h3>
                 <p>{degree}</p>
                 <p>{time}</p>
             </div>
