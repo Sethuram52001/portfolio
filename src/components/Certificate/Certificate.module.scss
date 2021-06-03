@@ -12,12 +12,6 @@
     //box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     text-align: center;
     font-family: $fontStyle;
-    background-color: aqua;
-}
-
-.certificateBody {
-    display: flex;
-    align-items: center;
 }
 
 .logoContainer {
@@ -26,14 +20,17 @@
     overflow: hidden;
 }
 
+.certificateBody {
+    height: 7rem;
+    text-align: center;
+}
+
 .certificateName {
-    color: green;
-    display: block;
+    height: 4rem;
+    font-family: $fontStyle;
 }
 
 .certificateOrganization {
-    color: red;
-    display: block;
 }
 
 .content:hover .logoContainer {
@@ -71,9 +68,7 @@
 }
 
 .content:hover .credentials {
-    //top: 50%;
     top: 0;
-    //left: 50%;
     left: 0;
     right: 0;
     opacity: 1;
