@@ -11,14 +11,14 @@ const ContactMe = () => {
             <h3>Reach out to me!</h3>
             <div className={styles.contactContainer}>
                 <div>
-                    <StaticImage src="../../assets/images/MyImg/MyImage.jpeg" quality={100} width={200} height={200} className={styles.myImage} />
-                </div>
-                <div>
                 <p>Feel free to discuss about anything related to dev or just drop a hi.</p>
                     <Link href={`mailto:${email_data.mailId}`}>
                         <img src={email_data.gmailIcon} alt="gmail" />
                     </Link>
                     <SocialLinks />
+                </div>
+                <div>
+                    <StaticImage src="../../assets/images/MyImg/MyImage.jpeg" quality={100} width={200} height={200} className={styles.myImage} />
                 </div>
             </div>
         </div>

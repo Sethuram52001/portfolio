@@ -8,7 +8,7 @@
 
 @media (max-width: 768px) {
     .contactContainer {
-        display: block;
         text-align: center;
+        flex-direction: column-reverse;
     }
 }

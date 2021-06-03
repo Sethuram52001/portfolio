@@ -20,6 +20,12 @@
     align-items: center;
 }
 
+.logoContainer {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    overflow: hidden;
+}
+
 .certificateName {
     color: green;
     display: block;
@@ -39,6 +45,10 @@
     height: 150px;
 }
 
+.certificateImage {
+    height: 17rem;
+}
+
 .content {
     position: relative;
     width: 100%;
@@ -56,6 +66,8 @@
     opacity: 0;
     text-decoration: none;
     color: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .content:hover .credentials {

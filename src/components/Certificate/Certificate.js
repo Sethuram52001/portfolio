@@ -13,7 +13,7 @@ const Certificate = ({name, organization, verification, image_name}) => {
             <div className={styles.content}>
                 <a href={verification} rel="noreferrer">
                     <div className={styles.logoContainer}>
-                        <img src={image} alt={image_name} />
+                        <img className={styles.certificateImage} src={image} alt={image_name} />
                     </div>
                     <div className={styles.credentials}>
                         <h3 className={styles.credentialsText}>View credentials</h3>
