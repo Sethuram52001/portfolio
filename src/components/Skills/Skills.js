@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import * as styles from "./Skills.module.scss";
 import SkillComponent from '../SkillComponent/SkillComponent';
 import animationData from "../../assets/animations/web-development.json";
 import {StaticImage} from "gatsby-plugin-image";
 import {skill_icons, skill_section} from "./Skills.data";
 import LottieDisplay from '../LottieDisplay/LottieDisplay';
+import {GlobalStateContext} from "../../context/GlobalContextProvider";
 
 const Skills = () => {
 
+    const isDark = useContext(GlobalStateContext);
+
     return ( 
         <div id="skills">
-            <h1 className={styles.title}>What I do</h1>
+            <h1 className={isDark.theme !==  "dark" ? styles.title : styles.titleDark}>What I do</h1>
             <p className={styles.subtitle}>I love learning new tech stacks in the field of web-dev. And aspire to explore all the tech stack which intrigues me.</p>
             <div className={styles.skillContainer}>
                 <div className={styles.lottieContainer}>

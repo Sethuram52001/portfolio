@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import * as styles from "./ExperienceCard.module.scss";
 import {StaticImage} from "gatsby-plugin-image";
+import {GlobalStateContext} from "../../context/GlobalContextProvider";
 
 const ExperienceCard = ({company_name, role, period, verification, work_description}) => {
-    console.log(work_description)
+
     const workDesc = work_description.map((desc) => <li className={styles.listBullets}>{desc}</li>);
+    const isDark = useContext(GlobalStateContext);
 
     return ( 
-        <div className={styles.experience_card}>
+        <div className={isDark.theme !== "dark" ? styles.experience_card : `${styles.experience_card} ${styles.experience_card_dark}`}>
             <div className={styles.content}>
                 <a href={verification} target="_blank" rel="noreferrer">
                     <div className={styles.logoContainer}>

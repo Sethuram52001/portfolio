@@ -1,25 +1,25 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import * as styles from './Blogs.module.scss';
 import BlogCard from '../BlogCard/BlogCard';
 import db from "../../config/firebase.config";
 import { Button } from 'react-bootstrap';
 import {calculateLimit} from "../../utils/calculateLimit.blogs";
 import {blogs} from "./Blogs.data";
+import { fetchBlogs } from '../../utils/fetchBlogs.blogs';
 
 const Blogs = () => {
 
-    //const [blogs, setBlogs] = useState([]);
+    const [Blogs, setBlogs] = useState();
 
-    // db.collection('blogs')
-    //     .orderBy("chrono_order", "desc")
-    //     .get()
-    //     .then(querySnapshot => {
-    //         const documents = querySnapshot.docs.map(doc => doc.data())
-    //         console.log(documents)
-    //         setBlogs(documents)
-    // })
+    useEffect(() => {
+        const data = db.collection('blogs').orderBy("chrono_order", 'desc').get().then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+                console.log(doc.data());
+            })
+        })
+        setBlogs(data)
+    }, []);
 
-    console.log(calculateLimit())
     const ShowMore = "Show More";
     const ShowLess = "Show Less";
 

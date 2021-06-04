@@ -11,6 +11,17 @@
   font-family: $fontStyle;
 }
 
+.headerDark {
+  background-color: #171c28;;
+}
+
+.headerDark li a {
+  display: block;
+  padding: 15px 20px;
+  color: #fdfcfa !important;
+  text-decoration: none;
+}
+
 .header ul {
   margin: 0;
   padding: 0;
@@ -31,7 +42,7 @@
 
 .header li a:hover, 
 .header .menuBtn:hover {
-  background-color: aqua;
+  color: aqua;
 }
 
 .header .logo {

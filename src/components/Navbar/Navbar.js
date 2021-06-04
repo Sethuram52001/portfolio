@@ -1,16 +1,15 @@
 import React, { useContext } from 'react';
 import Headroom from "react-headroom";
 import * as styles from  "./Navbar.module.scss";
-import {GlobalDispatchContext, GlobalStateContext} from "../../context/GlobalContextProvider";
+import {GlobalStateContext} from "../../context/GlobalContextProvider";
 import ToggleButton from '../ToggleButton/ToggleButton';
 
 const NavBar = () => {
 
-    const dispatch = useContext(GlobalDispatchContext);
-    const state = useContext(GlobalStateContext);
+    const isDark = useContext(GlobalStateContext);
     return ( 
         <Headroom>
-        <header className={styles.header}>
+        <header className={isDark.theme !== "dark" ? styles.header : `${styles.header} ${styles.headerDark}`}>
           <a href="/" className={styles.logo}>
             <span className={styles.greyColor}> &lt;</span>
             <span className={styles.logoName}>{"Sethuram"}</span>

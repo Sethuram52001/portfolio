@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import * as styles from "./Certificate.module.scss";
 import Coursera_Logo from "../../assets/images/certificate-logos/Coursera_Logo.png";
 import MongoDB_Logo from "../../assets/images/certificate-logos/MongoDB_Logo.jpg";
 import HackerRank_Logo from "../../assets/images/certificate-logos/HackerRank_Logo.png";
+import { GlobalStateContext } from '../../context/GlobalContextProvider';
 
 const Certificate = ({name, organization, verification, image_name}) => {
 
     const image = image_name === "Coursera_Logo.png" ? Coursera_Logo : image_name === "MongoDB_Logo.jpg" ? MongoDB_Logo : image_name === "HackerRank_Logo.png" ? HackerRank_Logo : null; 
-
+    const isDark = useContext(GlobalStateContext);
+    
     return ( 
-        <div className={styles.certificateContainer}>
+        <div className={isDark.theme !== "dark" ? styles.certificateContainer : `${styles.certificateContainer} ${styles.certificateContainerDark}`}>
             <div className={styles.content}>
                 <a href={verification} rel="noreferrer">
                     <div className={styles.logoContainer}>

@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import * as styles from "./ProjectCard.module.scss";
 import {colors} from "./github_official_colors_lang";
 import PathVisualizerImage from "../../assets/images/project-images/Pathfinding-Visualizer.jpeg";
 import SortingVisualizerImage from "../../assets/images/project-images/Sorting-Visualizer.jpeg";
 import TrelloCloneImage from "../../assets/images/project-images/Trello-Clone.jpeg";
 import HPWikiImage from "../../assets/images/project-images/Harry-Potter-Wiki.jpeg";
+import {GlobalStateContext} from "../../context/GlobalContextProvider";
 
 const ProjectCard = ({title, intro, lang, stars, forks, image_name, url}) => {
 
     const image = image_name === "Pathfinding-Visualizer" ? PathVisualizerImage : image_name === "Sorting-Visualizer" ? SortingVisualizerImage : image_name === "Trello-Clone" ? TrelloCloneImage : image_name === "Harry-Potter-Wiki" ? HPWikiImage : null;
+    const isDark = useContext(GlobalStateContext);
 
     function openGithubRepo(url) {
         let win = window.open(url, "_blank");
@@ -17,7 +19,7 @@ const ProjectCard = ({title, intro, lang, stars, forks, image_name, url}) => {
 
     return ( 
         <div 
-            className={styles.card}
+            className={isDark.theme !== "dark" ? styles.card : `${styles.card} ${styles.cardDark}`}
             onClick={() => openGithubRepo(url)}
         >
             <div>
