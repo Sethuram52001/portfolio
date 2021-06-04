@@ -1,11 +1,11 @@
 .experienceSection {
-    margin: 1rem;
 }
 
 .experience_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin: 5rem;
 }
 
 @media (max-width: 768px) {

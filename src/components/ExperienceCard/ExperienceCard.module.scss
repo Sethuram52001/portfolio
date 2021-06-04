@@ -49,11 +49,9 @@
     position: relative;
 }
 
-.content:hover {
+.content:hover .logoContainer {
     opacity: 0.5;
 }
-
-.logoContainer {}
 
 .credentials {
     background-color: rgba(0, 0, 0, 0.7);
