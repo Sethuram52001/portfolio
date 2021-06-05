@@ -7,7 +7,7 @@ const Projects = () => {
 
     return ( 
         <div id="projects">
-            <h1>Projects</h1>
+            <h2>Projects</h2>
             <p>Here are some my projects which I loved working on, and explored new territories while doing so!</p>
             <div className={styles.projectContainer}>
                 {projects.map((project, index) => (

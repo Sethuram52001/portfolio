@@ -40,7 +40,7 @@ const Blogs = () => {
     return ( 
         <div id="blogs">
             <div className={styles.blogHeader}>
-                <h1 className={styles.blogHeaderTitle}>Blogs</h1>
+                <h2 className={styles.blogHeaderTitle}>Blogs</h2>
                 <p className={styles.blogHeaderSubtitle}>
                     I like writing blogs that way, I can assess my own understanding on the concept and help others learning about the same.
                 </p>
