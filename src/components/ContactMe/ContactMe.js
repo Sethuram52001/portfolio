@@ -8,7 +8,7 @@ import SocialLinks from "../SocialLinks/SocialLinks";
 const ContactMe = () => {
     return ( 
         <div id="#contact">
-            <h3>Reach out to me!</h3>
+            <h2>Reach out to me!</h2>
             <div className={styles.contactContainer}>
                 <div>
                 <p>Feel free to discuss about anything related to dev or just drop a hi.</p>

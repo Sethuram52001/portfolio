@@ -7,7 +7,7 @@ const Education = () => {
 
     return ( 
         <div id="education" className={styles.educationSection}>
-            <h1>Education</h1>
+            <h2>Education</h2>
             <div className={styles.education_container}>
                 {education.map((edu, index) => (
                     <EducationCard name={edu.name} degree={edu.degree} time={edu.time} />
