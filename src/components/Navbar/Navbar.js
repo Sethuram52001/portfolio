@@ -28,10 +28,19 @@ const NavBar = () => {
                 <a href="#skills">Skills</a>
               </li>
               <li>
-                <a href="#experience">Work Experiences</a>
+                <a href="#projects">My Projects</a>
               </li>
               <li>
                 <a href="#blogs">Blogs</a>
+              </li>
+              <li>
+                <a href="#certifications">Certifications</a>
+              </li>
+              <li>
+                <a href="#education">Education</a>
+              </li>
+              <li>
+                <a href="#experience">Work Experiences</a>
               </li>
               <li>
                 <a href="#contact">Contact Me</a>

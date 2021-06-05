@@ -26,6 +26,7 @@
     "react-headroom": "^3.1.1",
     "react-helmet": "^6.1.0",
     "react-lottie": "^1.2.3",
+    "react-reveal": "^1.2.2",
     "reactstrap": "^8.9.0",
     "sass": "^1.32.12"
   },

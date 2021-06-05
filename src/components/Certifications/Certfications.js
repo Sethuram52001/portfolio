@@ -25,7 +25,10 @@ const Certifications = () => {
     }, [showStatus]);
 
     return ( 
-        <div id="certifications" className={styles.certificationsSection}>
+        <div 
+            id="certifications" 
+            className={styles.certificationsSection}
+        >
             <h2>Certifications</h2>
             <div className={styles.certificationsContainer}>
                 {certificates.slice(0, limit).map((certificate, index) => (
