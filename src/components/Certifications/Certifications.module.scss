@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
     .certificationsContainer {
         justify-content: space-around;
     }

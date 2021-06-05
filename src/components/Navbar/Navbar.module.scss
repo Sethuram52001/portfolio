@@ -45,8 +45,15 @@
   color: aqua;
 }
 
+.header li a:hover, 
+.header .menuBtnDark:hover {
+  color: aqua;
+}
+
 .logoName {
   color: aqua;
+  font-family: $logoFont2;
+  font-size: larger;
 }
 
 .header .logo {
@@ -148,7 +155,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
 
   .header .logo {
     display: block;

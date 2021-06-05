@@ -11,7 +11,7 @@
     border-radius: 50%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
     .contactContainer {
         text-align: center;
         flex-direction: column-reverse;

@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
 
 .card {
-    font-family: 'Merriweather';
+    font-family: $fontStyle, 'Merriweather';
     width: 370px;
     background-color: white;
     padding: 0.5rem;
@@ -43,8 +43,8 @@
 }
 
 .language_color {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background-color: blue;
     margin-right: 0.25rem;
     border-radius: 100%;

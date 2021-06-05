@@ -5,21 +5,25 @@ import db from "../../config/firebase.config";
 import { Button } from 'react-bootstrap';
 import {calculateLimit} from "../../utils/calculateLimit.blogs";
 import {blogs} from "./Blogs.data";
-import { fetchBlogs } from '../../utils/fetchBlogs.blogs';
+//import { fetchBlogs } from '../../utils/fetchBlogs.blogs';
 
 const Blogs = () => {
 
-    const [Blogs, setBlogs] = useState();
+    const [Blogs, setBlogs] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        setLoading(true);
         const data = db.collection('blogs').orderBy("chrono_order", 'desc').get().then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
                 console.log(doc.data());
             })
         })
-        setBlogs(data)
+        setBlogs(data);
+        setLoading(false);
     }, []);
 
+    console.log(Blogs)
     const ShowMore = "Show More";
     const ShowLess = "Show Less";
 

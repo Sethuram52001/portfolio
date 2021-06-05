@@ -15,7 +15,7 @@ const NavBar = () => {
             <span className={styles.logoName}>{"Sethuram"}</span>
             <span className={styles.greyColor}>/&gt;</span>
           </a>
-          <input className={styles.menuBtn} type="checkbox" id="menu-btn" />
+          <input className={isDark.theme !== "dark" ? styles.menuBtn : `${styles.menuBtn} ${styles.menuBtnDark}`} type="checkbox" id="menu-btn" />
           <label
             className={styles.menuIcon}
             htmlFor="menu-btn"

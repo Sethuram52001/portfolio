@@ -45,6 +45,10 @@
     position: relative; 
 }
 
+.listBulletsDark:before {
+    border-color: transparent white !important;
+}
+
 .content {
     position: relative;
 }

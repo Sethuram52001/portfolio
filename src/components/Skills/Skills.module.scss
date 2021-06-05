@@ -41,7 +41,7 @@
     color: $subTitleColor;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
     .skillContainer {
         display: block;
     }

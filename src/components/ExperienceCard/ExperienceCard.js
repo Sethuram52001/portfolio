@@ -6,8 +6,8 @@ import Slide from "react-reveal/Slide";
 
 const ExperienceCard = ({company_name, role, period, verification, work_description}) => {
 
-    const workDesc = work_description.map((desc) => <li className={styles.listBullets}>{desc}</li>);
     const isDark = useContext(GlobalStateContext);
+    const workDesc = work_description.map((desc) => <li className={isDark.theme !== "dark" ? styles.listBullets : `${styles.listBullets} ${styles.listBulletsDark}`}>{desc}</li>);
 
     return ( 
         <Slide bottom>
