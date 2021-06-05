@@ -147,3 +147,16 @@
     display: none;
   }
 }
+
+@media (min-width: 768px) {
+
+  .header .logo {
+    display: block;
+    flex: none;
+    float: left;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-top: -17px;
+    line-height: normal;
+  }
+}
