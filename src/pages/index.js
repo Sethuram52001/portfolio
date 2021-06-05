@@ -14,17 +14,21 @@ import Main from "../components/Main/Main";
 //import {About, Skills, Projects, Blogs, Certifications, Education, Experience, NavBar, ContactMe, Main} from "../components";
 
 const IndexPage = () => (
-  <Main>
-    <Navbar />
-    <About />
-    <Skills />
-    <Projects />
-    <Blogs />
-    <Certifications />
-    <Education />
-    <Experience />
-    <ContactMe />
-  </Main>
+  <>
+  <Navbar />
+  <Layout>
+    <Main>
+      <About />
+      <Skills />
+      <Projects />
+      <Blogs />
+      <Certifications />
+      <Education />
+      <Experience />
+      <ContactMe />
+    </Main>
+  </Layout>
+  </>
 )
 
 export default IndexPage

@@ -16,8 +16,9 @@ img {
   color: white;
 }
 
-.light-theme {
-
+.ligth-theme {
+  background-color: #ffffff;
+  color: black;
 }
 
 html {

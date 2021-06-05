@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`
         }}
-        className={isDark === "dark" ? 'dark-theme' : 'light-theme'}
+        className={isDark.theme === "dark" ? 'dark-theme' : 'light-theme'}
       >
         <main>{children}</main>
       </div>
