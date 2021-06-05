@@ -7,14 +7,14 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-//import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
-//import Header from "./header"
 import "./layout.css"
 import { GlobalStateContext } from "../context/GlobalContextProvider"
+import { Helmet } from "react-helmet"
 
 const Layout = ({ children }) => {
-  /*const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -22,12 +22,16 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)*/
+  `)
 
   const isDark = React.useContext(GlobalStateContext);
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{data.site.siteMetadata.title}</title> 
+      </Helmet>
       <div
         style={{
           margin: `0 auto`

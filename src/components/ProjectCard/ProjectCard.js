@@ -21,6 +21,9 @@ const ProjectCard = ({title, intro, lang, stars, forks, image_name, url}) => {
         <div 
             className={isDark.theme !== "dark" ? styles.card : `${styles.card} ${styles.cardDark}`}
             onClick={() => openGithubRepo(url)}
+            data-sal="fade"
+            data-sal-delay="300"
+            data-sal-easing="ease"
         >
             <div>
                 <img src={image} alt={image_name} />

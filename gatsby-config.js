@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Portfolio | Sethruam.S.V`,
+    title: `Sethruam.S.V | Portfolio`,
     description: `My portfolio site`,
     author: `Sethuram.S.V`,
   },
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
