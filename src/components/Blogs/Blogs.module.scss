@@ -1,12 +1,19 @@
+@import '../../styles/globalColor.scss';
+@import '../../styles/globalFontSize.scss';
+@import '../../styles/globalFonts.scss';
+@import '../../styles/mediaBreakPoints.scss';
+
 .blogHeader {
 }
 
 .blogHeaderTitle {
-    font-size: 2rem;
+    font-size: $titleSize;
+    font-family: $fontStyle;
 }
 
 .blogHeaderSubtitle {
-    font-size: 1rem;
+    font-size: $subTitleSize;
+    font-family: $fontStyle;
 }
 
 .blogContainer {
