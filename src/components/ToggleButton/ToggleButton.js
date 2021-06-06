@@ -1,10 +1,9 @@
 import React, { useContext, useState } from 'react';
-import {GlobalStateContext, GlobalDispatchContext} from "../../context/GlobalContextProvider";
+import { GlobalDispatchContext} from "../../context/GlobalContextProvider";
 import "./ToggleButton.scss";
 
 const ToggleButton = () => {
 
-    const isDark = useContext(GlobalStateContext);
     const dispatch = useContext(GlobalDispatchContext);
     const [isChecked, setChecked] = useState(true);
 
