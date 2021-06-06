@@ -6,8 +6,8 @@ import ExperienceCard from '../ExperienceCard/ExperienceCard';
 const Experience = () => {
 
     return ( 
-        <div id="experience" className={styles.experienceSection}>
-            <h2>Experience</h2>
+        <div id="experience">
+            <h2 className={styles.title}>Experience</h2>
             <div className={styles.experience_container}>
                 {experiences.map((experience, index) => (
                     <ExperienceCard company_name={experience.company_name} role={experience.role} period={experience.period} verification={experience.verification} work_description={experience.work_description} />

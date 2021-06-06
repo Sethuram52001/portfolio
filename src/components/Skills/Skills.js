@@ -14,7 +14,7 @@ const Skills = () => {
     return ( 
         <div id="skills">
             <h1 className={isDark.theme !==  "dark" ? styles.title : styles.titleDark}>What I do</h1>
-            <p className={styles.subtitle}>I love learning new tech stacks in the field of web-dev. And aspire to explore all the tech stack which intrigues me.</p>
+            <p className={isDark.theme !==  "dark" ? styles.subtitle: styles.subtitleDark}>I love learning new tech stacks in the field of web-dev. And aspire to explore all the tech stack which intrigues me.</p>
             <div className={styles.skillContainer}>
                 <div className={styles.lottieContainer}>
                     <LottieDisplay lottieFile={animationData} />
@@ -26,7 +26,7 @@ const Skills = () => {
                             skill={skill} 
                         />
                     ))}
-                    <div className={styles.skillDetails}>
+                    <div className={isDark.theme !==  "dark" ? styles.skillDetails : styles.skillDetailsDark}>
                         {skill_section.skills.map((skill, index) => {
                             return (
                                 <p key={index}>

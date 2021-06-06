@@ -3,13 +3,15 @@
 @import '../../styles/globalFonts.scss';
 @import '../../styles/mediaBreakPoints.scss';
 
-.certificationsSection {
-}
-
 .certificationsContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+}
+
+.title {
+    font-family: $fontStyle;
+    font-size: $titleSize;
 }
 
 .showMore {

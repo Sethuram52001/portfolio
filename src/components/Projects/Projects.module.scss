@@ -6,8 +6,12 @@
 .projectContainer {
     display: flex;
     flex-wrap: wrap;
-    //justify-content: space-around;
     justify-content: flex-start;
+}
+
+.title {
+    font-family: $fontStyle;
+    font-size: $titleSize;
 }
 
 @media (max-width: $tablet) {

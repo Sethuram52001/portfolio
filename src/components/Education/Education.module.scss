@@ -3,14 +3,16 @@
 @import '../../styles/globalFonts.scss';
 @import '../../styles/mediaBreakPoints.scss';
 
-.educationSection {
-}
-
 .education_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 5rem;
+}
+
+.title {
+    font-family: $fontStyle;
+    font-size: $titleSize;
 }
 
 @media (max-width: $tablet) {

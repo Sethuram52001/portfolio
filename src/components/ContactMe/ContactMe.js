@@ -7,14 +7,15 @@ import SocialLinks from "../SocialLinks/SocialLinks";
 
 const ContactMe = () => {
     return ( 
-        <div id="#contact">
-            <h2>Reach out to me!</h2>
+        <div id="contact">
+            <h2 className={styles.title}>Reach out to me!</h2>
             <div className={styles.contactContainer}>
                 <div>
-                <p>Feel free to discuss about anything related to dev or just drop a hi.</p>
+                    <p>Feel free to discuss about anything related to dev or just drop a hi.</p>
                     <Link href={`mailto:${email_data.mailId}`}>
-                        <img src={email_data.gmailIcon} alt="gmail" />
+                        <img className={styles.mailIcon} src={email_data.gmailIcon} alt="gmail" />
                     </Link>
+                    <p>mail id: sethuram52001@gmail.com</p>
                     <SocialLinks />
                 </div>
                 <div>

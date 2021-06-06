@@ -36,9 +36,21 @@
     color: $subTitleColor;
 }
 
+.subtitleDark {
+    font-size: 1rem;
+    text-align: center;
+    font-family: $fontStyle;
+    color: $subTitleColorDark;
+}
+
 .skillDetails {
     font-family: $fontStyle;
     color: $subTitleColor;
+}
+
+.skillDetailsDark {
+    font-family: $fontStyle;
+    color: $subTitleColorDark;
 }
 
 @media (max-width: $tablet) {

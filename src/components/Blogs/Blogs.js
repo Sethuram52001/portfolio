@@ -5,11 +5,12 @@ import db from "../../config/firebase.config";
 import { Button } from 'react-bootstrap';
 import {calculateLimit} from "../../utils/calculateLimit.blogs";
 import {blogs} from "./Blogs.data";
+import { fetchBlogs } from '../../utils/fetchBlogs.blogs';
 //import { fetchBlogs } from '../../utils/fetchBlogs.blogs';
 
 const Blogs = () => {
 
-    const [Blogs, setBlogs] = useState([]);
+/*    const [Blogs, setBlogs] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -24,6 +25,8 @@ const Blogs = () => {
     }, []);
 
     console.log(Blogs)
+*/
+
     const ShowMore = "Show More";
     const ShowLess = "Show Less";
 

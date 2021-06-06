@@ -20,7 +20,7 @@ const About = () => {
                         👋
                     </span>
                 </h1>
-                <p className={styles.subtitle}>
+                <p className={isDark.theme !== "dark" ? `${styles.subtitle}` : `${styles.subtitle} ${styles.subtitleDark}`}>
                     I'm a passionate learner in the field of web-development, currently having fun building web-apps with ReactJS / Javascript and some othe cool libraries and frameworks.
                     I'm also intrigued by data structures and algorithms and occassionaly write blogs on them.
                 </p>

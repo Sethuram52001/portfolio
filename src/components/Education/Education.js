@@ -6,11 +6,11 @@ import EducationCard from "../EducationCard/EducationCard";
 const Education = () => {
 
     return ( 
-        <div id="education" className={styles.educationSection}>
-            <h2>Education</h2>
+        <div id="education">
+            <h2 className={styles.title}>Education</h2>
             <div className={styles.education_container}>
                 {education.map((edu, index) => (
-                    <EducationCard name={edu.name} degree={edu.degree} time={edu.time} />
+                    <EducationCard key={index} name={edu.name} degree={edu.degree} time={edu.time} />
                 ))}
             </div>
         </div>

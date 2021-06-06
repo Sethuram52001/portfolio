@@ -5,10 +5,22 @@
 
 .contactContainer {
     display: flex;
+    justify-content: space-evenly;
+    font-size: 1.25rem;
+    font-family: $fontStyle;
+}
+
+.title {
+    font-family: $fontStyle;
+    font-size: $titleSize;
 }
 
 .myImage {
     border-radius: 50%;
+}
+
+.mailIcon {
+    height: 2rem;
 }
 
 @media (max-width: $tablet) {
