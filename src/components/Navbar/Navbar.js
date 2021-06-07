@@ -55,8 +55,3 @@ const NavBar = () => {
 }
  
 export default NavBar;
-/*
-
-        {state.theme}
-        <button onClick={() => {dispatch({type: "TOGGLE_THEME"})}} type="button" >Toggle</button>
-*/
