@@ -10,7 +10,13 @@ const Experience = () => {
             <h2 className={styles.title}>Experience</h2>
             <div className={styles.experience_container}>
                 {experiences.map((experience, index) => (
-                    <ExperienceCard company_name={experience.company_name} role={experience.role} period={experience.period} verification={experience.verification} work_description={experience.work_description} />
+                    <ExperienceCard 
+                        key={index} 
+                        company_name={experience.company_name} 
+                        role={experience.role} period={experience.period} 
+                        verification={experience.verification} 
+                        work_description={experience.work_description} 
+                    />
                 ))}
             </div>
         </div>

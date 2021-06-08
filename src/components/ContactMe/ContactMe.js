@@ -4,6 +4,7 @@ import {StaticImage} from "gatsby-plugin-image";
 import { Link } from 'gatsby';
 import {email_data} from "./ContactMe.data";
 import SocialLinks from "../SocialLinks/SocialLinks";
+import {Button} from "reactstrap";
 
 const ContactMe = () => {
     return ( 
@@ -11,7 +12,7 @@ const ContactMe = () => {
             <h2 className={styles.title}>Reach out to me!</h2>
             <div className={styles.contactContainer}>
                 <div>
-                    <p>Feel free to discuss about anything related to dev or just drop a hi.</p>
+                    <p>Feel free to discuss about anything related to dev, dsa or just drop a hi.</p>
                     <Link href={`mailto:${email_data.mailId}`}>
                         <img className={styles.mailIcon} src={email_data.gmailIcon} alt="gmail" />
                     </Link>
@@ -19,7 +20,7 @@ const ContactMe = () => {
                     <SocialLinks />
                 </div>
                 <div>
-                    <StaticImage src="../../assets/images/MyImg/MyImage.jpeg" quality={100} width={200} height={200} className={styles.myImage} />
+                    <StaticImage src="../../assets/images/MyImg/MyImage2.jpeg" quality={100} width={200} height={200} className={styles.myImage} />
                 </div>
             </div>
         </div>

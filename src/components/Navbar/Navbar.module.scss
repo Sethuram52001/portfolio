@@ -135,7 +135,7 @@
   top: 0;
 }
 
-@media (min-width: 48em) {
+@media (min-width: $tablet) {
   .header li {
     float: left;
   }

@@ -53,6 +53,10 @@
     position: relative;
 }
 
+.logoContainer {
+    overflow: hidden;
+}
+
 .content:hover .logoContainer {
     opacity: 0.5;
 }

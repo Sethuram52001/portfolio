@@ -1,8 +1,8 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import GithubIcon from "../../assets/images/social-logos/github.svg";
-import LinkedInIcon from "../../assets/images/social-logos/linkedin.svg";
-import MediumIcon from "../../assets/images/social-logos/medium.svg";
+import GithubIcon from "../../assets/images/social-logos/iconmonstr-github-1.svg";
+import LinkedInIcon from "../../assets/images/social-logos/linkedin1.svg";
+import MediumIcon from "../../assets/images/social-logos/iconmonstr-medium-4.svg";
 import * as styles from "./SocialLinks.module.scss";
 
 const SocialLinks = () => {
