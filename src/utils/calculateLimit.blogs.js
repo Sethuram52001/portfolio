@@ -1,11 +1,11 @@
 export function calculateLimit() {
-    if(window.length > 768) {
+    if(window.innerWidth > 1024) {
         return 4;
     }
-    else if(window.length <= 768 && window.length > 480) {
+    else if(window.innerWidth <= 1024 && window.innerWidth > 480) {
         return 4;
     }
-    else if(window.length <= 480) {
+    else if(window.innerWidth <= 480) {
         return 2;
     }
     else {

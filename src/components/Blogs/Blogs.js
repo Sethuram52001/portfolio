@@ -6,41 +6,39 @@ import { Button } from 'react-bootstrap';
 import {calculateLimit} from "../../utils/calculateLimit.blogs";
 import {blogs} from "./Blogs.data";
 import { fetchBlogs } from '../../utils/fetchBlogs.blogs';
-//import { fetchBlogs } from '../../utils/fetchBlogs.blogs';
 
 const Blogs = () => {
 
-/*    const [Blogs, setBlogs] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [Blogs, setBlogs] = useState([]);
+    //const [isLoading, setLoading] = useState(false);
+
+    const fetchBlogs = async() => {
+        const response = db.collection('blogs').orderBy("chrono_order", 'desc');
+        const data = await response.get();
+        data.docs.forEach(item => {
+            setBlogs(Blogs => [...Blogs, item.data()])
+        })
+    }
 
     useEffect(() => {
-        setLoading(true);
-        const data = db.collection('blogs').orderBy("chrono_order", 'desc').get().then((querySnapshot) => {
-            querySnapshot.forEach((doc) => {
-                console.log(doc.data());
-            })
-        })
-        setBlogs(data);
-        setLoading(false);
+        fetchBlogs();
+        //setLoading(true);
     }, []);
-
-    console.log(Blogs)
-*/
 
     const ShowMore = "Show More";
     const ShowLess = "Show Less";
-
-    const [limit, setLimit] = useState(4);
+    
+    const [limit, setLimit] = useState(calculateLimit());
     const [showStatus, setShowStatus] = useState(ShowMore);
 
     const handleShow = useCallback(() => {
         if(showStatus === ShowMore) {
-            setLimit(blogs.length);
+            setLimit(10);
             setShowStatus(ShowLess);
         }
         else {
-            setLimit(4);
-
+            setLimit(calculateLimit());
+            setShowStatus(ShowMore);
         }
     }, [showStatus]);
 
@@ -53,7 +51,7 @@ const Blogs = () => {
                 </p>
             </div>
             <div className={styles.blogContainer}>
-                {blogs.slice(0, limit).map((blog, index) => (
+                {Blogs && Blogs.slice(0, limit).map((blog, index) => (
                     <BlogCard
                         key={index} 
                         title={blog.title} 
