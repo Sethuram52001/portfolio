@@ -77,10 +77,15 @@
 
 .credentialsText {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 0;
     right: 0;
     font-family: $fontStyle;
+}
+
+.content:hover .credentialsText {
+    top: 50%;
+    transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: $tablet) {
