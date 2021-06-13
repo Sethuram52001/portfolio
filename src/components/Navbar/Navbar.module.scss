@@ -47,11 +47,12 @@
 
 .header li a:hover, 
 .header .menuBtnDark:hover {
-  color: aqua;
+  color: $midnightBlue;
+  //font-weight: 750;
 }
 
 .logoName {
-  color: aqua;
+  color: $navyBlue;
   font-family: $logoFont2;
   font-size: larger;
 }
@@ -82,7 +83,7 @@
 }
 
 .header .menuIcon .navicon {
-  background-color: aqua;
+  background-color: $midnightBlue;
   display: block;
   height: 2px;
   position: relative;
@@ -92,7 +93,7 @@
 
 .header .menuIcon .navicon:before,
 .header .menuIcon .navicon:after {
-  background:aqua;
+  background:$midnightBlue;
   content: "";
   display: block;
   height: 100%;
