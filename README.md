@@ -42,5 +42,12 @@ You will also see any lint errors in the console.
 For deployment, you can use any hosting service which supports ssr sites. For more details you can refer the gatsby docs:
 - [Gastby Docs](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/)
 
+# Techonologies Used
+- Gatsby
+- Graphql
+- react-headroom
+- reactstrap
+- reactbootstrap
+
 # References
 - I have taken some desing and implementation ideas from the iconic [Saad Pasta's Portfolio Project](https://github.com/saadpasta/developerFolio)
