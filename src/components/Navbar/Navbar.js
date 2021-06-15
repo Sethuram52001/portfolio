@@ -12,12 +12,12 @@ const NavBar = () => {
         <header className={isDark.theme !== "dark" ? styles.header : `${styles.header} ${styles.headerDark}`}>
           <a href="/" className={styles.logo}>
             <span className={styles.greyColor}> &lt;</span>
-            <span className={styles.logoName}>{"Sethuram"}</span>
+            <span className={isDark.theme !== "dark" ? styles.logoName : `${styles.logoName} ${styles.logoNameDark}`}>{"Sethuram"}</span>
             <span className={styles.greyColor}>/&gt;</span>
           </a>
           <input className={isDark.theme !== "dark" ? styles.menuBtn : `${styles.menuBtn} ${styles.menuBtnDark}`} type="checkbox" id="menu-btn" />
           <label
-            className={styles.menuIcon}
+            className={isDark.theme !== "dark" ? styles.menuIcon : `${styles.menuIcon} ${styles.menuIconDark}`}
             htmlFor="menu-btn"
             style={{color: "white"}}
           >

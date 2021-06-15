@@ -40,21 +40,26 @@
   text-decoration: none;
 }
 
-.header li a:hover, 
-.header .menuBtn:hover {
-  color: aqua;
-}
 
 .header li a:hover, 
-.header .menuBtnDark:hover {
+.header .menuBtn:hover {
   color: $midnightBlue;
   //font-weight: 750;
+}
+
+.headerDark li a:hover,
+.headerDark .menuBtnDark:hover {
+  color: aqua !important;
 }
 
 .logoName {
   color: $navyBlue;
   font-family: $logoFont2;
   font-size: larger;
+}
+
+.logoNameDark {
+  color: aqua!important;
 }
 
 .header .logo {
@@ -101,13 +106,23 @@
   transition: all 0.2s ease-out;
   width: 100%;
 }
-
 .header .menuIcon .navicon:before {
   top: 5px;
 }
 
 .header .menuIcon .navicon:after {
   top: -5px;
+}
+
+.header .menuIconDark .navicon::before,
+.header .menuIconDark .navicon::after {
+  background: aqua;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
 }
 
 // menu btn
