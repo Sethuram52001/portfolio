@@ -96,6 +96,15 @@
   width: 18px;
 }
 
+.headerDark .menuIconDark .naviconDark {
+  background-color: aqua;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
 .header .menuIcon .navicon:before,
 .header .menuIcon .navicon:after {
   background:$midnightBlue;
@@ -114,8 +123,8 @@
   top: -5px;
 }
 
-.header .menuIconDark .navicon::before,
-.header .menuIconDark .navicon::after {
+.headerDark .menuIconDark .navicon::before,
+.headerDark .menuIconDark .navicon::after {
   background: aqua;
   content: "";
   display: block;

@@ -21,7 +21,7 @@ const NavBar = () => {
             htmlFor="menu-btn"
             style={{color: "white"}}
           >
-            <span className={styles.navicon}></span>
+            <span className={isDark.theme !== "dark" ? styles.navicon : `${styles.navicon} ${styles.naviconDark}`}></span>
           </label>
           <ul className={styles.menu}>
               <li>
