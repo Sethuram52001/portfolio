@@ -47,7 +47,9 @@ For deployment, you can use any hosting service which supports ssr sites. For mo
 - Graphql
 - react-headroom
 - reactstrap
-- reactbootstrap
+- react-bootstrap
+- sass
+- firebase
 
 # References
 - I have taken some desing and implementation ideas from the iconic [Saad Pasta's Portfolio Project](https://github.com/saadpasta/developerFolio)
