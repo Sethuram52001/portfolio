@@ -20,7 +20,7 @@ const BlogCard = ({title, intro, published, read, link}) => {
                     {intro} 
                 </p>
                 <p className={styles.blogFooter}>
-                    {published} {read}
+                    {published} . {read}
                 </p>
                 <div className={styles.linkToBlog}>
                     <div className={styles.goArrow}>
