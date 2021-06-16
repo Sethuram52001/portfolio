@@ -1,11 +1,11 @@
 import React, { createContext, useReducer } from 'react';
 
-export const GlobalStateContext = createContext();
-export const GlobalDispatchContext = createContext();
-
 const initialState = {
     theme: 'light'
 }
+
+export const GlobalStateContext = createContext(initialState);
+export const GlobalDispatchContext = createContext();
 
 function reducer(state, action) {
     switch (action.type) {

@@ -1,4 +1,6 @@
 export function calculateLimit() {
+    if (typeof window === "undefined") return 6
+    
     if(window.innerWidth > 1024) {
         return 6;
     }
