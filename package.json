@@ -31,6 +31,7 @@
     "sass": "^1.32.12"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.1",
     "prettier": "2.2.1"
   },
   "keywords": [
@@ -44,7 +45,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gh-pages -d public --repo https://github.com/Sethuram52001/Sethuram52001.github.io.git"
   },
   "repository": {
     "type": "git",
