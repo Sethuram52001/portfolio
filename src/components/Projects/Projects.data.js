@@ -39,9 +39,9 @@ export const projects = [
         title: "My Porfolio (this project)",
         intro: "Welcome to my portfolio project! I have built this portfolio with the idea of this project serving as template portfolio.",
         lang: "JavaScript",
-        stars: "1",
+        stars: "2",
         forks: "0",
-        image: "",
+        image: "portfolio",
         url: "https://github.com/Sethuram52001/portfolio"
     }
 ];

@@ -5,12 +5,13 @@ import PathVisualizerImage from "../../assets/images/project-images/Pathfinding-
 import SortingVisualizerImage from "../../assets/images/project-images/Sorting-Visualizer.jpeg";
 import TrelloCloneImage from "../../assets/images/project-images/Trello-Clone.jpeg";
 import HPWikiImage from "../../assets/images/project-images/Harry-Potter-Wiki.jpeg";
+import PortfolioImage from "../../assets/images/project-images/portfolio.jpeg";
 import {GlobalStateContext} from "../../context/GlobalContextProvider";
 import Zoom from "react-reveal/Zoom";
 
 const ProjectCard = ({title, intro, lang, stars, forks, image_name, url}) => {
 
-    const image = image_name === "Pathfinding-Visualizer" ? PathVisualizerImage : image_name === "Sorting-Visualizer" ? SortingVisualizerImage : image_name === "Trello-Clone" ? TrelloCloneImage : image_name === "Harry-Potter-Wiki" ? HPWikiImage : null;
+    const image = image_name === "Pathfinding-Visualizer" ? PathVisualizerImage : image_name === "Sorting-Visualizer" ? SortingVisualizerImage : image_name === "Trello-Clone" ? TrelloCloneImage : image_name === "Harry-Potter-Wiki" ? HPWikiImage : image_name === "portfolio" ? PortfolioImage : null;
     const isDark = useContext(GlobalStateContext);
 
     function openGithubRepo(url) {
