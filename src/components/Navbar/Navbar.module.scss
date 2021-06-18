@@ -49,7 +49,7 @@
 
 .headerDark li a:hover,
 .headerDark .menuBtnDark:hover {
-  color: aqua !important;
+  color: $aquaBlue !important;
 }
 
 .logoName {
@@ -59,7 +59,7 @@
 }
 
 .logoNameDark {
-  color: aqua!important;
+  color: $aquaBlue!important;
 }
 
 .header .logo {
@@ -97,7 +97,7 @@
 }
 
 .headerDark .menuIconDark .naviconDark {
-  background-color: aqua;
+  background-color: $aquaBlue;
   display: block;
   height: 2px;
   position: relative;
@@ -125,7 +125,7 @@
 
 .headerDark .menuIconDark .navicon::before,
 .headerDark .menuIconDark .navicon::after {
-  background: aqua;
+  background: $aquaBlue;
   content: "";
   display: block;
   height: 100%;
