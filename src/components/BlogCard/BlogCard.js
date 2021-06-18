@@ -12,14 +12,15 @@ const BlogCard = ({title, intro, published, read, link}) => {
             <a 
                 className={isDark.theme !== "dark" ? styles.blogCard : `${styles.blogCard} ${styles.blogCardDark}`} 
                 href={link}
+                target="_blank"
             >
-                <h3 className={styles.blogTitle}>
+                <h3>
                     {title}
                 </h3>
-                <p className={styles.blogSummary}>
+                <p>
                     {intro} 
                 </p>
-                <p className={styles.blogFooter}>
+                <p>
                     {published} . {read}
                 </p>
                 <div className={styles.linkToBlog}>

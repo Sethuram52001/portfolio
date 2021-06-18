@@ -35,17 +35,12 @@
 }
 
 .aboutContainerDark {
-    background-color: #171c28;
+    background-color: $darkTheme;
     display: flex;
 }
 
 .aboutDetails {
     padding: 3rem;
-}
-
-.resumeButton {
-    background-color: blue;
-    border-radius: 2px;
 }
 
 .socialSection {

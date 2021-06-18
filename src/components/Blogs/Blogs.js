@@ -4,25 +4,21 @@ import BlogCard from '../BlogCard/BlogCard';
 import db from "../../config/firebase.config";
 import { Button } from 'react-bootstrap';
 import {calculateLimit} from "../../utils/calculateLimit.blogs";
-import {blogs} from "./Blogs.data";
-import { fetchBlogs } from '../../utils/fetchBlogs.blogs';
 
 const Blogs = () => {
 
-    const [Blogs, setBlogs] = useState([]);
-    //const [isLoading, setLoading] = useState(false);
+    const [blogs, setBlogs] = useState([]);
 
     const fetchBlogs = async() => {
         const response = db.collection('blogs').orderBy("chrono_order", 'desc');
         const data = await response.get();
         data.docs.forEach(item => {
-            setBlogs(Blogs => [...Blogs, item.data()])
+            setBlogs(blogs => [...blogs, item.data()])
         })
     }
 
     useEffect(() => {
         fetchBlogs();
-        //setLoading(true);
     }, []);
 
     const ShowMore = "Show More";
@@ -44,14 +40,14 @@ const Blogs = () => {
 
     return ( 
         <div id="blogs">
-            <div className={styles.blogHeader}>
+            <div>
                 <h2 className={styles.blogHeaderTitle}>Blogs</h2>
                 <p className={styles.blogHeaderSubtitle}>
                     I like writing blogs that way, I can assess my own understanding on the concept and help others learning about the same.
                 </p>
             </div>
             <div className={styles.blogContainer}>
-                {Blogs && Blogs.slice(0, limit).map((blog, index) => (
+                {blogs && blogs.slice(0, limit).map((blog, index) => (
                     <BlogCard
                         key={index} 
                         title={blog.title} 

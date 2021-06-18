@@ -10,7 +10,12 @@ const Education = () => {
             <h2 className={styles.title}>Education</h2>
             <div className={styles.education_container}>
                 {education.map((edu, index) => (
-                    <EducationCard key={index} name={edu.name} degree={edu.degree} time={edu.time} />
+                    <EducationCard 
+                        key={index} 
+                        name={edu.name} 
+                        degree={edu.degree} 
+                        time={edu.time} 
+                    />
                 ))}
             </div>
         </div>

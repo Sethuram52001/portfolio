@@ -16,12 +16,12 @@
     width: 500px;
     margin: 2rem;
     text-decoration: none;
-    color: black;
+    color: $titleColor;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .blogCardDark {
-    color: white;
+    color: $titleColorDark;
     box-shadow: rgb(255, 255, 255) 0px 3px 6px, rgb(255, 252, 252) 0px 3px 6px;
 }
 
@@ -32,7 +32,6 @@
     top: -16px;
     right: -16px;
     background: $vividBlue;
-    //background:rgb(136, 247, 255);;
     height: 32px;
     width: 32px;
     border-radius: 32px;
@@ -50,15 +49,7 @@
     color: white;
     background-color: $vividBlue;
     transition: all 0.5s ease-out;
-    //box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    //box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-
-.blogTitle {}
-
-.blogSummary{}
-
-.blogFooter {}
 
 .linkToBlog {
     display: flex;

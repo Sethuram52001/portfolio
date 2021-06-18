@@ -28,6 +28,7 @@ const About = () => {
                     <SocialLinks />
                     <Button
                         href="https://drive.google.com/drive/u/0/folders/1zKfGLvNqZTv6KGgjAUxJMPTOrhqUt1Lf"
+                        target="_blank"
                     >
                         <span>See My Resume</span>
                     </Button>
