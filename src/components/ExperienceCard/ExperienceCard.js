@@ -28,7 +28,7 @@ const ExperienceCard = ({company_name, role, period, verification, work_descript
                     <h3 className={styles.experienceName}>{company_name}</h3>
                     <p>{role}</p>
                     <p>{period}</p>
-                    <div className={styles.workDescription}>
+                    <div>
                         <ul>
                             {workDesc}
                         </ul>

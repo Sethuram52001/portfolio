@@ -3,8 +3,11 @@ import * as styles from "./About.module.scss";
 import animationData from "../../assets/animations/student.json";
 import SocialLinks from '../SocialLinks/SocialLinks';
 import {Button} from "reactstrap";
-import LottieDisplay from '../LottieDisplay/LottieDisplay';
 import { GlobalStateContext } from '../../context/GlobalContextProvider';
+import loadable from "@loadable/component";
+import Loading from '../Loading/Loading';
+
+const LottieDisplay = loadable(() => import('../LottieDisplay/LottieDisplay'), {fallback: <Loading />});
 
 const About = () => {
 

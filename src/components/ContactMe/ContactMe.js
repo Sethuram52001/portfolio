@@ -4,7 +4,6 @@ import {StaticImage} from "gatsby-plugin-image";
 import { Link } from 'gatsby';
 import {email_data} from "./ContactMe.data";
 import SocialLinks from "../SocialLinks/SocialLinks";
-import {Button} from "reactstrap";
 
 const ContactMe = () => {
     return ( 

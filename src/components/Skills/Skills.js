@@ -4,8 +4,11 @@ import SkillComponent from '../SkillComponent/SkillComponent';
 import animationData from "../../assets/animations/web-development.json";
 import {StaticImage} from "gatsby-plugin-image";
 import {skill_icons, skill_section} from "./Skills.data";
-import LottieDisplay from '../LottieDisplay/LottieDisplay';
 import {GlobalStateContext} from "../../context/GlobalContextProvider";
+import Loading from '../Loading/Loading';
+import loadable from '@loadable/component';
+
+const LottieDisplay = loadable(() => import('../LottieDisplay/LottieDisplay'), {fallback: <Loading />});
 
 const Skills = () => {
 

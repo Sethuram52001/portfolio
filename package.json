@@ -5,6 +5,10 @@
   "version": "0.1.0",
   "author": "Sethuram.S.V <sethuram52001@gmail.com>",
   "dependencies": {
+    "@loadable/babel-plugin": "^5.13.2",
+    "@loadable/component": "^5.15.0",
+    "@loadable/webpack-plugin": "^5.15.0",
+    "babel-preset-gatsby": "^1.7.1",
     "bootstrap": "^5.0.0",
     "dotenv": "^10.0.0",
     "firebase": "^8.6.3",
