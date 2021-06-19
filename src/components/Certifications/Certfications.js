@@ -34,7 +34,7 @@ const Certifications = () => {
                         name={certificate.name} 
                         organization={certificate.organization} 
                         verification={certificate.verification} 
-                        image_name={certificate.image}             
+                        image={certificate.image}             
                     />
                 ))}
             </div>

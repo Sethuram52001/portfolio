@@ -18,7 +18,7 @@ const Projects = () => {
                         lang={project.lang} 
                         stars={project.stars} 
                         forks={project.forks} 
-                        image_name={project.image}
+                        image={project.image}
                         url={project.url}
                     />
                 ))}

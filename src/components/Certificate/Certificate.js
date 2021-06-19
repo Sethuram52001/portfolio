@@ -1,14 +1,11 @@
 import React, { useContext } from 'react';
 import * as styles from "./Certificate.module.scss";
-import Coursera_Logo from "../../assets/images/certificate-logos/Coursera_Logo.png";
-import MongoDB_Logo from "../../assets/images/certificate-logos/MongoDB_Logo.jpg";
-import HackerRank_Logo from "../../assets/images/certificate-logos/HackerRank_Logo.png";
 import { GlobalStateContext } from '../../context/GlobalContextProvider';
 import Flip from "react-reveal/Flip";
 
-const Certificate = ({name, organization, verification, image_name}) => {
+const Certificate = ({name, organization, verification, image}) => {
 
-    const image = image_name === "Coursera_Logo.png" ? Coursera_Logo : image_name === "MongoDB_Logo.jpg" ? MongoDB_Logo : image_name === "HackerRank_Logo.png" ? HackerRank_Logo : null; 
+    //const image = image_name === "Coursera_Logo.png" ? Coursera_Logo : image_name === "MongoDB_Logo.jpg" ? MongoDB_Logo : image_name === "HackerRank_Logo.png" ? HackerRank_Logo : null; 
     const isDark = useContext(GlobalStateContext);
     
     return ( 
@@ -19,7 +16,7 @@ const Certificate = ({name, organization, verification, image_name}) => {
                 <div className={styles.content}>
                     <a href={verification} rel="noreferrer">
                         <div className={styles.logoContainer}>
-                            <img className={styles.certificateImage} src={image} alt={image_name} />
+                            <img className={styles.certificateImage} src={image} alt={organization} />
                         </div>
                         <div className={styles.credentials}>
                             <h3 className={styles.credentialsText}>View credentials</h3>

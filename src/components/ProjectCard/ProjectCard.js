@@ -1,23 +1,19 @@
 import React, { useContext } from 'react';
 import * as styles from "./ProjectCard.module.scss";
 import {colors} from "./github_official_colors_lang";
-import PathVisualizerImage from "../../assets/images/project-images/Pathfinding-Visualizer.jpeg";
-import SortingVisualizerImage from "../../assets/images/project-images/Sorting-Visualizer.jpeg";
-import TrelloCloneImage from "../../assets/images/project-images/Trello-Clone.jpeg";
-import HPWikiImage from "../../assets/images/project-images/Harry-Potter-Wiki.jpeg";
-import PortfolioImage from "../../assets/images/project-images/portfolio.jpeg";
 import {GlobalStateContext} from "../../context/GlobalContextProvider";
 import Zoom from "react-reveal/Zoom";
 
-const ProjectCard = ({title, intro, lang, stars, forks, image_name, url}) => {
+const ProjectCard = ({title, intro, lang, stars, forks, image, url}) => {
 
-    const image = image_name === "Pathfinding-Visualizer" ? PathVisualizerImage : image_name === "Sorting-Visualizer" ? SortingVisualizerImage : image_name === "Trello-Clone" ? TrelloCloneImage : image_name === "Harry-Potter-Wiki" ? HPWikiImage : image_name === "portfolio" ? PortfolioImage : null;
     const isDark = useContext(GlobalStateContext);
 
     function openGithubRepo(url) {
         let win = window.open(url, "_blank");
         win.focus();
     }
+
+    const languageColor = colors[lang];
 
     return ( 
         <Zoom bottom>
@@ -26,7 +22,7 @@ const ProjectCard = ({title, intro, lang, stars, forks, image_name, url}) => {
                 onClick={() => openGithubRepo(url)}
             >
                 <div>
-                    <img src={image} alt={image_name} />
+                    <img src={image} alt={title} />
                 </div>
                 <div className={styles.card_title}>{title}</div>
                 <div className={styles.card_body}>
@@ -36,7 +32,7 @@ const ProjectCard = ({title, intro, lang, stars, forks, image_name, url}) => {
                     <span className={styles.lang}>
                         <div
                             className={styles.language_color}
-                            style={{backgroundColor: colors.JavaScript}}
+                            style={{backgroundColor: languageColor}}
                         ></div>
                         {lang}
                     </span>

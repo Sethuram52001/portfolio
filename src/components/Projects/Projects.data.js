@@ -1,3 +1,9 @@
+import PathVisualizerImage from "../../assets/images/project-images/Pathfinding-Visualizer.jpeg";
+import SortingVisualizerImage from "../../assets/images/project-images/Sorting-Visualizer.jpeg";
+import TrelloCloneImage from "../../assets/images/project-images/Trello-Clone.jpeg";
+import HPWikiImage from "../../assets/images/project-images/Harry-Potter-Wiki.jpeg";
+import PortfolioImage from "../../assets/images/project-images/portfolio.jpeg";
+
 export const projects = [
     {
         title: "Path Finding Visualizer",
@@ -5,7 +11,7 @@ export const projects = [
         lang: "JavaScript",
         stars: "33",
         forks: "10",
-        image: "Pathfinding-Visualizer",
+        image: PathVisualizerImage,
         url: "https://github.com/Sethuram52001/Path-Finding-Visualizer"
     },
     {
@@ -14,7 +20,7 @@ export const projects = [
         lang: "JavaScript",
         stars: "6",
         forks: "3",
-        image: "Sorting-Visualizer",
+        image: SortingVisualizerImage,
         url: "https://github.com/Sethuram52001/sorting-visualizer"
     },
     {
@@ -23,7 +29,7 @@ export const projects = [
         lang: "JavaScript",
         stars: "2",
         forks: "1",
-        image: "Trello-Clone",
+        image: TrelloCloneImage,
         url: "https://github.com/Sethuram52001/TrelloClone"
     },
     {
@@ -32,7 +38,7 @@ export const projects = [
         lang: "JavaScript",
         stars: "3",
         forks: "0",
-        image: "Harry-Potter-Wiki",
+        image: HPWikiImage,
         url: "https://github.com/Sethuram52001/harry-potter-app"
     }, 
     {
@@ -41,7 +47,7 @@ export const projects = [
         lang: "JavaScript",
         stars: "2",
         forks: "0",
-        image: "portfolio",
+        image: PortfolioImage,
         url: "https://github.com/Sethuram52001/portfolio"
     }
 ];
