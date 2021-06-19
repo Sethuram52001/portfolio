@@ -3,7 +3,6 @@ import * as styles from "./ExperienceCard.module.scss";
 import {StaticImage} from "gatsby-plugin-image";
 import {GlobalStateContext} from "../../context/GlobalContextProvider";
 import Slide from "react-reveal/Slide";
-import companyImage from "../../assets/images/experience-logos/TSF.png";
 
 const ExperienceCard = ({company_name, role, period, verification, work_description}) => {
 

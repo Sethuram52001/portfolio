@@ -11,6 +11,6 @@ export function calculateLimit() {
         return 2;
     }
     else {
-        return 6;
+        return 4;
     }
 }

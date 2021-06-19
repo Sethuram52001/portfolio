@@ -1,11 +1,16 @@
-import React, {useState, useCallback} from 'react';
+import React, {useState, useCallback, lazy, Suspense} from 'react';
 import * as styles from "./Certifications.module.scss";
-import Certificate from '../Certificate/Certificate';
+//import Certificate from '../Certificate/Certificate';
 import {certificates} from "./Certifications.data";
+import Loading from '../Loading/Loading';
 import { Button } from 'react-bootstrap';
 import {calculateLimit} from "../../utils/calculateLimit.certificates";
 
+const Certificate = lazy(() => import('../Certificate/Certificate'));
+
 const Certifications = () => {
+
+    const renderLoader = () => <Loading />
 
     const ShowMore = "Show More";
     const ShowLess = "Show Less";
@@ -27,6 +32,7 @@ const Certifications = () => {
     return ( 
         <div id="certifications" >
             <h2 className={styles.title}>Certifications</h2>
+            <Suspense fallback={renderLoader()}>
             <div className={styles.certificationsContainer}>
                 {certificates.slice(0, limit).map((certificate, index) => (
                     <Certificate 
@@ -45,6 +51,7 @@ const Certifications = () => {
                     {showStatus}
                 </Button>
             </div>
+            </Suspense>
         </div>
      );
 }

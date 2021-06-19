@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import Lottie from "react-lottie";
+import Loading from "../Loading/Loading";
 
 const LottieDisplay = ({lottieFile}) => {
     const defaultOptions = {
@@ -9,9 +10,9 @@ const LottieDisplay = ({lottieFile}) => {
     }
     
     return ( 
-        <div >
-            <Lottie isClickToPauseDisabled={true}options={defaultOptions} />
-        </div>
+        <Suspense fallback={<Loading />}>
+            <Lottie isClickToPauseDisabled={true} options={defaultOptions} />
+        </Suspense>
      );
 }
  

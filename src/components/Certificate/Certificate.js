@@ -5,7 +5,6 @@ import Flip from "react-reveal/Flip";
 
 const Certificate = ({name, organization, verification, image}) => {
 
-    //const image = image_name === "Coursera_Logo.png" ? Coursera_Logo : image_name === "MongoDB_Logo.jpg" ? MongoDB_Logo : image_name === "HackerRank_Logo.png" ? HackerRank_Logo : null; 
     const isDark = useContext(GlobalStateContext);
     
     return ( 
