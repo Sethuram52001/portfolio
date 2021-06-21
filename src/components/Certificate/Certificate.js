@@ -13,7 +13,7 @@ const Certificate = ({name, organization, verification, image}) => {
                 className={isDark.theme !== "dark" ? styles.certificateContainer : `${styles.certificateContainer} ${styles.certificateContainerDark}`}
             >
                 <div className={styles.content}>
-                    <a href={verification} rel="noreferrer">
+                    <a href={verification} target="_blank" rel="noreferrer">
                         <div className={styles.logoContainer}>
                             <img className={styles.certificateImage} src={image} alt={organization} />
                         </div>

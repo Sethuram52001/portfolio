@@ -15,14 +15,14 @@ const ExperienceCard = ({company_name, role, period, verification, work_descript
                 className={isDark.theme !== "dark" ? styles.experience_card : `${styles.experience_card} ${styles.experience_card_dark}`}
             >
                 <div className={styles.content}>
-                    <a href={verification} rel="noreferrer">
+                    <a href={verification} target="_blank" rel="noreferrer">
                         <div className={styles.logoContainer}>
                             <StaticImage src="../../assets/images/experience-logos/TSF.png" alt="TSF" />
                         </div>
+                        <div className={styles.credentials}>
+                            <h3 className={styles.credentialsText}>View Credentials</h3>
+                        </div>
                     </a>
-                    <div className={styles.credentials}>
-                        <h3 className={styles.credentialsText}>View Credentials</h3>
-                    </div>
                 </div>
                 <div className={styles.experienceDetails}>
                     <h3 className={styles.experienceName}>{company_name}</h3>

@@ -9,8 +9,8 @@ export const projects = [
         title: "Path Finding Visualizer",
         intro: "Path-finding visualizer - a visualization tool for graph algorithms.",
         lang: "JavaScript",
-        stars: "33",
-        forks: "10",
+        stars: "35",
+        forks: "8",
         image: PathVisualizerImage,
         url: "https://github.com/Sethuram52001/Path-Finding-Visualizer"
     },
@@ -19,7 +19,7 @@ export const projects = [
         intro: "This is a sorting visualizer built with React JS, to visualize various sorting algorithms.",
         lang: "JavaScript",
         stars: "6",
-        forks: "3",
+        forks: "4",
         image: SortingVisualizerImage,
         url: "https://github.com/Sethuram52001/sorting-visualizer"
     },
@@ -45,7 +45,7 @@ export const projects = [
         title: "My Porfolio (this project)",
         intro: "Welcome to my portfolio project! I have built this portfolio with the idea of this project serving as template portfolio.",
         lang: "JavaScript",
-        stars: "2",
+        stars: "9",
         forks: "0",
         image: PortfolioImage,
         url: "https://github.com/Sethuram52001/portfolio"
