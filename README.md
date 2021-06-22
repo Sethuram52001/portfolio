@@ -11,7 +11,9 @@ Welcome to my portfolio project! I have built this portfolio with the idea of th
 # Tailoring the portfolio to your needs!
 All the data for each section is stored in their respective data files. For examples, if you're planning to add on your own certifications, head on to the certifications component and open up the certifications.data.js file and edit the details to suit your needs. 
 
-Attention I have used firestore to fetch the blogs as I write blogs pretty often. So, if you feel that some data in your portfolio website needs constant updates then feel free to upload those data in firstore or any database of your choice and fetch them to your component.
+All the icons, images are stored in the assets folder, where you can replace them with your needs.
+
+Attention :exclamation: I have used firestore to fetch the blogs as I write blogs pretty often. So, if you feel that some data in your portfolio website needs constant updates then feel free to upload those data in firstore or any database of your choice and fetch them to your component.
 
 The animated illustrations which you see over in the website are lottie files - you can find more cool lottie files in:
 - [Lottie File Source](https://lottiefiles.com)
@@ -20,7 +22,7 @@ The animated illustrations which you see over in the website are lottie files - 
 Pretty much the same as the standard gatsby application (or kind of similar to react in someways as gatsby is based on react), so all the usual react-scripts are available to your disposal. So, over here I restricted myself to the instructions to only the essentials.
 ## 1. Clone the repository or download the zip
 ```
-https://github.com/Sethuram52001/portfolio.git
+git clone https://github.com/Sethuram52001/portfolio.git
 ```
 
 ## 2. Install the dependencies
