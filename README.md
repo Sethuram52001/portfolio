@@ -3,10 +3,10 @@ Welcome to my portfolio project! I have built this portfolio with the idea of th
 
 # Preview Images for the portfolio site
 ### light mode
-![portfolio-light](https://user-images.githubusercontent.com/58566745/122004747-6d915780-cdd2-11eb-86cd-0757d136bdbe.png)
+![portfolio-light](https://user-images.githubusercontent.com/58566745/122868704-f0715f80-d348-11eb-9786-e2d45aa339ec.png)
 
 ### dark mode
-![portfolio-dark](https://user-images.githubusercontent.com/58566745/122006105-12606480-cdd4-11eb-9810-849dca84335d.png)
+![portfolio-dark](https://user-images.githubusercontent.com/58566745/122868774-0bdc6a80-d349-11eb-9b8c-aebe67d1586d.png)
 
 # Tailoring the portfolio to your needs!
 All the data for each section is stored in their respective data files. For examples, if you're planning to add on your own certifications, head on to the certifications component and open up the certifications.data.js file and edit the details to suit your needs. 
